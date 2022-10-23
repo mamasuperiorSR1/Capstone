@@ -2,17 +2,39 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class inventory : MonoBehaviour
+public class Inventory : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // 0 = primary, 1 = secondary, 2 = melee
+    [SerializeField] private Weapon[] weapons;
+
     void Start()
     {
-        
+        InitVariables();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void InitVariables()
     {
-        
+        weapons = new Weapon[3];
+    }
+
+    public void AddItem(Weapon newItem)
+    {
+        int newItemIndex = (int)newItem.weaponStyle;
+
+        if (weapons[newItemIndex] != null)
+        {
+            RemoveItem(newItemIndex);
+        }
+        weapons[newItemIndex] = newItem;
+    }
+
+    public void RemoveItem(int index)
+    {
+        weapons[index] = null;
+    }
+
+    public Weapon GetItem(int index)
+    {
+        return weapons[index];
     }
 }
