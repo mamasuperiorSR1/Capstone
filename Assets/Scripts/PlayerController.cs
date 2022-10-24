@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    #region
+    public static Transform instance;
+
+    private void Awake()
+    {
+        instance = this.transform;
+    }
+    #endregion
+
     [Header("Movement")]
     [SerializeField] private float moveSpeed;
     [SerializeField] private float walk;
@@ -16,13 +25,18 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask gMask;
     [SerializeField] private bool isGrounded = false;
     private Vector3 velocity = Vector3.zero;
+    private float moveX;
+    private float moveZ;
 
     private CharacterController controller;
+
+    private Animator anim;
 
     private void Start()
     {
         controller = GetComponent<CharacterController>();
         moveSpeed = walk;
+        anim = GetComponentInChildren<Animator>();
     }
 
     private void Update()
@@ -30,6 +44,23 @@ public class PlayerController : MonoBehaviour
         CheckGrouned();
         JumpAndFall();
         InputToMove();
+        HandleAnimations();
+    }
+
+    private void HandleAnimations()
+    {
+        if(moveX==0 && moveZ==0)
+        {
+            anim.SetFloat("Speed", 0, 0.2f, Time.deltaTime);
+        }
+        else if(!Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            anim.SetFloat("Speed", 0.5f, 0.2f, Time.deltaTime);
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            anim.SetFloat("Speed", 1f, 0.2f, Time.deltaTime);
+        }
     }
 
     private void InputToMove()
@@ -44,8 +75,8 @@ public class PlayerController : MonoBehaviour
             moveSpeed = walk;
         }
 
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveZ = Input.GetAxisRaw("Vertical");
+        moveX = Input.GetAxisRaw("Horizontal");
+        moveZ = Input.GetAxisRaw("Vertical");
 
         Vector3 direction = new Vector3(moveX, 0, moveZ);
         direction = direction.normalized;

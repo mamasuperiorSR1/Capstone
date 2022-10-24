@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CharacterStats : MonoBehaviour
 {
-    [SerializeField] protected int currentHealth;
+    [SerializeField] protected int health;
     [SerializeField] protected int maxHealth;
 
     [SerializeField] protected bool isDead;
@@ -16,43 +16,50 @@ public class CharacterStats : MonoBehaviour
 
     public virtual void CheckHealth()
     {
-        if (currentHealth <= 0)
+        if (health <= 0)
         {
-            currentHealth = 0;
+            health = 0;
             Die();
         }
 
-        if (currentHealth >= maxHealth)
+        if (health >= maxHealth)
         {
-            currentHealth = maxHealth;
+            health = maxHealth;
         }
     }
 
-    public void Die()
+    public virtual void Die()
     {
         isDead = true;
     }
 
-    private void SetHealth(int health)
+    public bool IsDead()
     {
-        currentHealth = health;
+        return isDead;
+    }
+
+    public void SetHealthTo(int healthToSetTo)
+    {
+        health = healthToSetTo;
         CheckHealth();
     }
 
-    public void GetDamage(int damage)
+    public void TakeDamage(int damage)
     {
-        SetHealth(currentHealth - damage);
+        int healthAfterDamage = health - damage;
+        SetHealthTo(healthAfterDamage);
     }
 
-    public void GetHeal(int heal)
+    public void Heal(int heal)
     {
-        SetHealth(currentHealth + heal);
+        int healthAfterHeal = health + heal;
+        SetHealthTo(healthAfterHeal);
     }
 
-    public void InitVariables()
+    public virtual void InitVariables()
     {
         maxHealth = 100;
-        SetHealth(maxHealth);
+        SetHealthTo(maxHealth);
         isDead = false;
     }
 }

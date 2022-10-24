@@ -54,12 +54,25 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshSurface.cs" />
+    <Compile Include="Assets\Scripts\HUD.cs" />
+    <Compile Include="Assets\Scripts\CharacterStats.cs" />
+    <Compile Include="Assets\Scripts\ZombieController.cs" />
+    <Compile Include="Assets\Scripts\Equipment.cs" />
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />
+    <Compile Include="Assets\Scripts\PlayerPickup.cs" />
+    <Compile Include="Assets\Scripts\Items\Weapon.cs" />
+    <Compile Include="Assets\Scripts\PlayerStats.cs" />
+    <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Items\Item.cs" />
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshLink.cs" />
     <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifier.cs" />
+    <Compile Include="Assets\Scripts\Items\ItemObject.cs" />
+    <Compile Include="Assets\Scripts\AnimationEventManager.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\ZombieController.cs" />
+    <Compile Include="Assets\Scripts\ZombieStats.cs" />
+    <Compile Include="Assets\Scripts\EnemySpawner.cs" />
+    <Compile Include="Assets\Scripts\Wave.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

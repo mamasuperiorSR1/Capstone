@@ -5,9 +5,9 @@ using UnityEngine;
 public class Equipment : MonoBehaviour
 {
     public int currentlyEquippedWeapon = 2;
-    private GameObject currentWeaponObject = null;
+    public GameObject currentWeaponObject = null;
 
-    [SerializeField] private Transform WeaponHolderR = null;
+    [SerializeField] public Transform WeaponHolderR = null;
     private Animator anim;
     private Inventory inventory;
 
@@ -25,32 +25,27 @@ public class Equipment : MonoBehaviour
             UnequipWeapon();
             EquipWeapon(inventory.GetItem(0));
         }
-
         if (Input.GetKeyDown(KeyCode.Alpha2) && currentlyEquippedWeapon != 1)
         {
             UnequipWeapon();
-            EquipWeapon(inventory.GetItem(1));
+            EquipWeapon(inventory.GetItem(0));
         }
-
         if (Input.GetKeyDown(KeyCode.Alpha3) && currentlyEquippedWeapon != 2)
         {
             UnequipWeapon();
-            EquipWeapon(inventory.GetItem(2));
+            EquipWeapon(inventory.GetItem(0));
         }
     }
-
 
     private void EquipWeapon(Weapon weapon)
     {
         currentlyEquippedWeapon = (int)weapon.weaponStyle;
         anim.SetInteger("weaponType", (int)weapon.weaponType);
-        currentWeaponObject = Instantiate(weapon.prefab, WeaponHolderR);
     }
 
     private void UnequipWeapon()
     {
         anim.SetTrigger("unequipWeapon");
-        Destroy(currentWeaponObject);
     }
 
     private void GetReferences()

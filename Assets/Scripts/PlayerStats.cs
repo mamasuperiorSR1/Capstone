@@ -26,6 +26,6 @@ public class PlayerStats : CharacterStats
     public override void CheckHealth()
     {
         base.CheckHealth();
-        hud.UpdateHealth(currentHealth, maxHealth);
+        hud.UpdateHealth(health, maxHealth);
     }
 }

@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class AnimationEventManager : MonoBehaviour
 {
+    private Equipment manager;
     private Inventory inventory;
-    private EquipmentManager manager;
+    //private EquipmentManager manager;
 
     private void Start()
     {
@@ -19,12 +20,12 @@ public class AnimationEventManager : MonoBehaviour
 
     public void InstantiateWeapon()
     {
-        manager.currentWeaponObject = Instantiate(inventory.GetItem(manager.currentlyEquippedWeapon).prefab);
+        manager.currentWeaponObject = Instantiate(inventory.GetItem(manager.currentlyEquippedWeapon).prefab, manager.WeaponHolderR);
     }
 
     public void GetReferences()
     {
         inventory = GetComponentInParent<Inventory>();
-        manager = GetComponentInParent<EquipmentManager>();
+        manager = GetComponentInParent<Equipment>();
     }
 }
