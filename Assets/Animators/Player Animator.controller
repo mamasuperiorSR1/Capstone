@@ -589,9 +589,9 @@ AnimatorStateMachine:
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions:
-  - first: {fileID: 6702881698286108636}
-    second: []
   - first: {fileID: -4352816208123789880}
+    second: []
+  - first: {fileID: 6702881698286108636}
     second: []
   - first: {fileID: 7357546008381185504}
     second: []
@@ -763,10 +763,10 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 6419056766124183774}
-    m_Position: {x: 270, y: 110, z: 0}
+    m_Position: {x: 290, y: 110, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7008638870041936437}
-    m_Position: {x: 270, y: 230, z: 0}
+    m_Position: {x: 290, y: 230, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6153701910224285477}
     m_Position: {x: 290, y: 0, z: 0}
