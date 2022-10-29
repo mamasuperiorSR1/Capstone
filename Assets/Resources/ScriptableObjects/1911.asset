@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1911
   m_EditorClassIdentifier: 
   name: M1911
-  description: A pistol.
+  description: Pistol
   icon: {fileID: 0}
   prefab: {fileID: 1615361705533077050, guid: 0e35105098673fb4e99effe29c33b36b, type: 3}
   magazineSize: 7
