@@ -6,7 +6,7 @@ public class WeaponShooting : MonoBehaviour
 {
     private Camera cam;
     private Inventory inventory;
-    //private EquipmentManager manager;
+    private EquipmentManager manager;
 
     void Start()
     {
@@ -25,19 +25,19 @@ public class WeaponShooting : MonoBehaviour
     {
         Ray ray = cam.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2));
         RaycastHit hit;
-        /*
+
         float currentWeaponRange = inventory.GetItem(manager.currentlyEquippedWeapon).range;
 
         if (Physics.Raycast(ray, out hit, currentWeaponRange))
         {
             Debug.Log(hit.transform.name);
-        }*/
+        }
     }
 
     private void GetReferences()
     {
         cam = GetComponentInChildren<Camera>();
         inventory = GetComponent<Inventory>();
-        //manager = GetComponent<EquipmentManager>();
+        manager = GetComponent<EquipmentManager>();
     }
 }

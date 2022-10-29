@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class AnimationEventManager : MonoBehaviour
 {
-    private Equipment manager;
+    private EquipmentManager manager;
     private Inventory inventory;
-    //private EquipmentManager manager;
 
     private void Start()
     {
@@ -26,6 +25,6 @@ public class AnimationEventManager : MonoBehaviour
     public void GetReferences()
     {
         inventory = GetComponentInParent<Inventory>();
-        manager = GetComponentInParent<Equipment>();
+        manager = GetComponentInParent<EquipmentManager>();
     }
 }

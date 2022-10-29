@@ -3489,7 +3489,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 531063607}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 995319c1adf76b048a3e55a5454f664a, type: 3}
   m_Name: 
@@ -8512,11 +8512,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3481577741933195477, guid: 1154dfb185384c247b6e7fa53e1402f5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 0.125
       objectReference: {fileID: 0}
     - target: {fileID: 3481577741933195477, guid: 1154dfb185384c247b6e7fa53e1402f5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: -4.57
       objectReference: {fileID: 0}
     - target: {fileID: 3481577741933195477, guid: 1154dfb185384c247b6e7fa53e1402f5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11091,7 +11091,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8125980222395706874, guid: 0b35a579ea58b20488c9a323c9992b7f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 0.195
       objectReference: {fileID: 0}
     - target: {fileID: 8125980222395706874, guid: 0b35a579ea58b20488c9a323c9992b7f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11876,7 +11876,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 365759439306809105, guid: a77793dcb6bf2d9458ad3cd4461fb5c5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8
+      value: 1.07
       objectReference: {fileID: 0}
     - target: {fileID: 365759439306809105, guid: a77793dcb6bf2d9458ad3cd4461fb5c5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15506,6 +15506,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8033595317425118850, guid: 811194f96cb266d4a875856633aec8c6, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8033595318484678338, guid: 811194f96cb266d4a875856633aec8c6, type: 3}
       propertyPath: m_Pivot.x
       value: 0
