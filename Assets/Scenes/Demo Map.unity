@@ -8103,6 +8103,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 9097553548853000148, guid: 474e0ba8df9c8af4da2702e3211694fc, type: 3}
+--- !u!4 &1235052855 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2169119915162627554, guid: 1ea206c898432bb47ae40c68031a14c9, type: 3}
+  m_PrefabInstance: {fileID: 2169119915646293730}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1249222699
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11081,6 +11086,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AK47 Pickup
       objectReference: {fileID: 0}
+    - target: {fileID: 2651606565369838700, guid: 0b35a579ea58b20488c9a323c9992b7f, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 2111f03b823c644439d8aa6ff385ba47, type: 2}
     - target: {fileID: 8125980222395706874, guid: 0b35a579ea58b20488c9a323c9992b7f, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -15497,6 +15506,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6988343937897523053, guid: 1ea206c898432bb47ae40c68031a14c9, type: 3}
+      propertyPath: WeaponHolderR
+      value: 
+      objectReference: {fileID: 1235052855}
+    - target: {fileID: 6988343937897523053, guid: 1ea206c898432bb47ae40c68031a14c9, type: 3}
+      propertyPath: defaultWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 2111f03b823c644439d8aa6ff385ba47, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ea206c898432bb47ae40c68031a14c9, type: 3}
 --- !u!1001 &8033595318659247048
@@ -15508,7 +15525,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8033595317425118850, guid: 811194f96cb266d4a875856633aec8c6, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8033595318484678338, guid: 811194f96cb266d4a875856633aec8c6, type: 3}
       propertyPath: m_Pivot.x

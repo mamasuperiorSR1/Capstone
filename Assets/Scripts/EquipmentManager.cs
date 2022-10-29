@@ -50,7 +50,7 @@ public class EquipmentManager : MonoBehaviour
 
     private void InitVariables()
     {
-        inventory.AddItem(defaultMeleeWeapon);
+        inventory.AddItem(defaultWeapon);
         EquipWeapon(inventory.GetItem(2));
     }
 
