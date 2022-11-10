@@ -10,20 +10,25 @@ public class HUD : MonoBehaviour
 
     // private PlayerStats stats;
 
+
+    [SerializeField] private WeaponUI weaponUI;
+
     void Start()
     {
         // stats = GetComponent<PlayerStats>();
-    }
-
-
-    void Update()
-    {
-        
     }
 
     public void UpdateHealth(int currentHealth, int maxHealth)
     {
         currentHealthT.text = currentHealth.ToString();
         maxHealthT.text = maxHealth.ToString();
+    }
+
+    public void UpdateWeaponUI(Weapon newWeapon)
+    {
+        // If we have a icon
+        // weaponUI.UpdateInfo(newWeapon.icon, newWeapon.magazineSize, newWeapon.storedAmmo);
+
+        weaponUI.UpdateInfo(newWeapon.magazineSize, newWeapon.storedAmmo);
     }
 }

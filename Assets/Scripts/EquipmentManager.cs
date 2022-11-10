@@ -6,10 +6,13 @@ public class EquipmentManager : MonoBehaviour
 {
     public int currentlyEquippedWeapon = 2;
     public GameObject currentWeaponObject = null;
+    public Transform currentWeaponBarrel = null;
 
     public Transform WeaponHolderR = null;
     private Animator anim;
+    public Animator currentWeaponAnim;
     private Inventory inventory;
+    private HUD hud;
 
     [SerializeField] Weapon defaultWeapon = null;
 
@@ -41,6 +44,7 @@ public class EquipmentManager : MonoBehaviour
     {
         currentlyEquippedWeapon = (int)weapon.weaponStyle;
         anim.SetInteger("weaponType", (int)weapon.weaponType);
+        hud.UpdateWeaponUI(weapon);
     }
 
     private void UnequipWeapon()
@@ -58,5 +62,6 @@ public class EquipmentManager : MonoBehaviour
     {
         anim = GetComponentInChildren<Animator>();
         inventory = GetComponent<Inventory>();
+        hud = GetComponent<HUD>();
     }
 }

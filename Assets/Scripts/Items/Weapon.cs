@@ -7,7 +7,8 @@ public class Weapon : Item
 {
     public GameObject prefab;
     public int magazineSize;
-    public int magazineCount;
+    public int storedAmmo;
+    public float fireRate;
     public float range;
     public WeaponType weaponType;
     public WeaponStyle weaponStyle;

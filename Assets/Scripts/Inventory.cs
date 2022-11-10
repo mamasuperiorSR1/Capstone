@@ -7,8 +7,11 @@ public class Inventory : MonoBehaviour
     // 0 = primary, 1 = secondary, 2 = melee
     [SerializeField] private Weapon[] weapons;
 
+    private WeaponShooting shooting;
+
     void Start()
     {
+        GetReferences();
         InitVariables();
     }
 
@@ -26,6 +29,8 @@ public class Inventory : MonoBehaviour
             RemoveItem(newItemIndex);
         }
         weapons[newItemIndex] = newItem;
+
+        shooting.InitAmmo((int)newItem.weaponStyle, newItem);
     }
 
     public void RemoveItem(int index)
@@ -36,5 +41,10 @@ public class Inventory : MonoBehaviour
     public Weapon GetItem(int index)
     {
         return weapons[index];
+    }
+
+    private void GetReferences()
+    {
+        shooting = GetComponent<WeaponShooting>();
     }
 }
