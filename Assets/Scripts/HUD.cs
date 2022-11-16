@@ -31,4 +31,9 @@ public class HUD : MonoBehaviour
 
         weaponUI.UpdateInfo(newWeapon.magazineSize, newWeapon.storedAmmo);
     }
+
+    public void UpdateWeaponAmmoUI(int currentAmmo, int storedAmmo)
+    {
+        weaponUI.UpdateAmmoUI(currentAmmo, storedAmmo);
+    }
 }

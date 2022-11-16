@@ -22,6 +22,7 @@ public class WeaponShooting : MonoBehaviour
     private Inventory inventory;
     private EquipmentManager manager;
     private Animator anim;
+    private HUD hud;
 
     void Start()
     {
@@ -100,6 +101,7 @@ public class WeaponShooting : MonoBehaviour
             {
                 primaryCurrentAmmo -= currentAmmoUsed;
                 primaryCurrentAmmoStorage -= currentStoredAmmoUsed;
+                hud.UpdateWeaponAmmoUI(primaryCurrentAmmo, primaryCurrentAmmoStorage);
             }
         }
 
@@ -115,6 +117,7 @@ public class WeaponShooting : MonoBehaviour
             {
                 secondaryCurrentAmmo -= currentAmmoUsed;
                 secondaryCurrentAmmoStorage -= currentStoredAmmoUsed;
+                hud.UpdateWeaponAmmoUI(secondaryCurrentAmmo, secondaryCurrentAmmoStorage);
             }
         }
     }
@@ -179,8 +182,8 @@ public class WeaponShooting : MonoBehaviour
                         return;
                     }
 
-                    primaryCurrentAmmo += ammoToReload;
-                    primaryCurrentAmmoStorage -= ammoToReload;
+                    AddAmmo(slot, ammoToReload, 0);
+                    UseAmmo(slot, 0, ammoToReload);
 
                     primaryMagazineIsEmpty = false;
                     CheckCanShoot(slot);
@@ -203,8 +206,8 @@ public class WeaponShooting : MonoBehaviour
                         return;
                     }
 
-                    secondaryCurrentAmmo += ammoToReload;
-                    secondaryCurrentAmmoStorage -= ammoToReload;
+                    AddAmmo(slot, ammoToReload, 0);
+                    UseAmmo(slot, 0, ammoToReload);
 
                     secondaryMagazineIsEmpty = false;
                     CheckCanShoot(slot);
@@ -226,6 +229,25 @@ public class WeaponShooting : MonoBehaviour
 
     }
 
+    private void AddAmmo(int slot, int currentAmmoadded, int currentStoredAmmoAdded)
+    {
+        //primary
+        if (slot == 0)
+        {
+            primaryCurrentAmmo += currentAmmoadded;
+            primaryCurrentAmmoStorage += currentStoredAmmoAdded;
+            hud.UpdateWeaponAmmoUI(primaryCurrentAmmo, primaryCurrentAmmoStorage);
+        }
+
+        //secondary
+        if (slot == 1)
+        {
+            secondaryCurrentAmmo += currentAmmoadded;
+            secondaryCurrentAmmoStorage += currentStoredAmmoAdded;
+            hud.UpdateWeaponAmmoUI(secondaryCurrentAmmo, secondaryCurrentAmmoStorage);
+        }
+    }
+
 
     private void GetReferences()
     {
@@ -233,5 +255,6 @@ public class WeaponShooting : MonoBehaviour
         inventory = GetComponent<Inventory>();
         manager = GetComponent<EquipmentManager>();
         anim = GetComponent<Animator>();
+        hud = GetComponent<HUD>();
     }
 }
