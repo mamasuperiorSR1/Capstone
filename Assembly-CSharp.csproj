@@ -58,6 +58,7 @@
     <Compile Include="Assets\Scripts\HUD.cs" />
     <Compile Include="Assets\Scripts\CharacterStats.cs" />
     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
+    <Compile Include="Assets\Scripts\WeaponUI.cs" />
     <Compile Include="Assets\Scripts\ZombieController.cs" />
     <Compile Include="Assets\Scripts\EquipmentManager.cs" />
     <Compile Include="Assets\Scripts\ZombieStats.cs" />
