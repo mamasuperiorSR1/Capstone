@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/release' branch; Version is '2020.3.27f1 (e759542391ea) revision 15161684'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'en' Physical Memory: 32702 MB
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'en' Physical Memory: 32537 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
@@ -15,11 +15,11 @@ E:/GitHub Repository/Capstone
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-3565
+2773
 Successfully changed project path to: E:/GitHub Repository/Capstone
 E:/GitHub Repository/Capstone
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 27.59 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 19.80 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.27f1 (e759542391ea)
 [Subsystems] Discovering subsystems at path E:/Apps/Unity Hub/Installs/2020.3.27f1/Editor/Data/Resources/UnitySubsystems
@@ -30,94 +30,94 @@ Direct3D:
     Renderer: NVIDIA GeForce RTX 3080 Ti (ID=0x2208)
     Vendor:   
     VRAM:     12100 MB
-    Driver:   31.0.15.2698
+    Driver:   31.0.15.2802
 Initialize mono
 Mono path[0] = 'E:/Apps/Unity Hub/Installs/2020.3.27f1/Editor/Data/Managed'
 Mono path[1] = 'E:/Apps/Unity Hub/Installs/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'E:/Apps/Unity Hub/Installs/2020.3.27f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56740
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56524
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/Apps/Unity Hub/Installs/2020.3.27f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000638 seconds.
+Registered in 0.000407 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 24.73 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 15.79 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.445 seconds
+- Completed reload, in  0.279 seconds
 Domain Reload Profiling:
-	ReloadAssembly (446ms)
-		BeginReloadAssembly (43ms)
+	ReloadAssembly (279ms)
+		BeginReloadAssembly (27ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (349ms)
-			LoadAssemblies (43ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (217ms)
+			LoadAssemblies (27ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (117ms)
+			SetupTypeCache (70ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (128ms)
+			RebuildScriptCaches (13ms)
+			SetupLoadedEditorAssemblies (84ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (2ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (25ms)
-				BeforeProcessingInitializeOnLoad (13ms)
-				ProcessInitializeOnLoadAttributes (64ms)
-				ProcessInitializeOnLoadMethodAttributes (22ms)
+				RefreshPlugins (16ms)
+				BeforeProcessingInitializeOnLoad (9ms)
+				ProcessInitializeOnLoadAttributes (43ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002118 seconds.
+Registered in 0.001027 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.27 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.19 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.780 seconds
+- Completed reload, in  0.470 seconds
 Domain Reload Profiling:
-	ReloadAssembly (781ms)
-		BeginReloadAssembly (116ms)
+	ReloadAssembly (471ms)
+		BeginReloadAssembly (67ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (2ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (621ms)
-			LoadAssemblies (65ms)
+			CreateAndSetChildDomain (10ms)
+		EndReloadAssembly (378ms)
+			LoadAssemblies (41ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (221ms)
+			SetupTypeCache (131ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (231ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (147ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (2ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (58ms)
-				ProcessInitializeOnLoadAttributes (160ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (2ms)
+				BeforeProcessingInitializeOnLoad (36ms)
+				ProcessInitializeOnLoadAttributes (103ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.25 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.20 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1530 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 69.7 MB.
 System memory in use after: 69.8 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1963.
-Total: 2.077000 ms (FindLiveObjects: 0.093400 ms CreateObjectMapping: 0.033900 ms MarkObjects: 1.893300 ms  DeleteObjects: 0.055200 ms)
+Total: 1.638800 ms (FindLiveObjects: 0.065800 ms CreateObjectMapping: 0.018300 ms MarkObjects: 1.509200 ms  DeleteObjects: 0.044800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -132,112 +132,144 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/Items/Item.cs
-  artifactKey: Guid(11b1ce5da50dc8c48be626cd4d774779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Items/Item.cs using Guid(11b1ce5da50dc8c48be626cd4d774779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a078421a563b198993cf339b8248a3af') in 0.024046 seconds 
-  Import took 0.025853 seconds .
+  path: Assets/Model/Weapon/Animation/Ak47 down.fbx
+  artifactKey: Guid(5406783e2731a854bb830c642aea2c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Model/Weapon/Animation/Ak47 down.fbx using Guid(5406783e2731a854bb830c642aea2c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b536cc02c7ed104732ea8fc4a482e2d') in 0.026656 seconds 
+  Import took 0.028101 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.123393 seconds.
-  path: Assets/Prefabs/AK47.prefab
-  artifactKey: Guid(f7dc814e702e2434faa67cceaed15638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AK47.prefab using Guid(f7dc814e702e2434faa67cceaed15638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8de06491fd5b37259429a9d5b5d02af') in 0.072170 seconds 
-  Import took 0.074233 seconds .
+  Time since last request: 0.000174 seconds.
+  path: Assets/Model/Weapon/Animation/Ak47 walk.fbx
+  artifactKey: Guid(035259c818fd7c74490da6380be58fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Model/Weapon/Animation/Ak47 walk.fbx using Guid(035259c818fd7c74490da6380be58fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82881b540019dd92513cf14d6fa12691') in 0.002684 seconds 
+  Import took 0.003919 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000281 seconds.
-  path: Assets/Prefabs/Player.prefab
-  artifactKey: Guid(1ea206c898432bb47ae40c68031a14c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player.prefab using Guid(1ea206c898432bb47ae40c68031a14c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16f1214093a09bac9bd6590e2aa4ef1f') in 0.019775 seconds 
-  Import took 0.022396 seconds .
+  Time since last request: 0.000088 seconds.
+  path: Assets/Model/Weapon/Animation/870 walk.fbx
+  artifactKey: Guid(8cabc03f3dab8bb4d9e4c68d6dd00e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Model/Weapon/Animation/870 walk.fbx using Guid(8cabc03f3dab8bb4d9e4c68d6dd00e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11f6d8d53f874cd9a880530809bf8dd6') in 0.002168 seconds 
+  Import took 0.003339 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000305 seconds.
-  path: Assets/Prefabs/M1911.prefab
-  artifactKey: Guid(0e35105098673fb4e99effe29c33b36b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/M1911.prefab using Guid(0e35105098673fb4e99effe29c33b36b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0717c494719d76a63b13b11b92b1521e') in 0.006359 seconds 
-  Import took 0.008263 seconds .
+  Time since last request: 0.000129 seconds.
+  path: Assets/Model/Weapon/Animation/870 up.fbx
+  artifactKey: Guid(5a434fa7a49e77546b200923c9e3d096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Model/Weapon/Animation/870 up.fbx using Guid(5a434fa7a49e77546b200923c9e3d096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fff45fc3cedf7320d4e3b98cb3559a1') in 0.002241 seconds 
+  Import took 0.003377 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000296 seconds.
-  path: Assets/Prefabs/Zombie.prefab
-  artifactKey: Guid(5bb3419758cfc4745ae35500c1bc2311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Zombie.prefab using Guid(5bb3419758cfc4745ae35500c1bc2311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3deb53e55ba53d82406f9c62af97ea2b') in 0.009281 seconds 
-  Import took 0.011401 seconds .
+  Time since last request: 0.000099 seconds.
+  path: Assets/Model/Weapon/Animation/870 down.fbx
+  artifactKey: Guid(32a1f78073edfa14d9843f428d1505db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Model/Weapon/Animation/870 down.fbx using Guid(32a1f78073edfa14d9843f428d1505db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37b02f34152aaedd65ef61b231c2a5e5') in 0.002202 seconds 
+  Import took 0.003358 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000284 seconds.
-  path: Assets/Prefabs/Remington 870.prefab
-  artifactKey: Guid(b3f7acaeb9c49df4fabe2973aa62b985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Remington 870.prefab using Guid(b3f7acaeb9c49df4fabe2973aa62b985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98fdac244df0316db7c7e670629e47f3') in 0.006127 seconds 
-  Import took 0.008006 seconds .
+  Time since last request: 0.000097 seconds.
+  path: Assets/Model/Weapon/Animation/Ak47 idle.fbx
+  artifactKey: Guid(92f57bc17a8b7dd4faccde4fcd49e77b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Model/Weapon/Animation/Ak47 idle.fbx using Guid(92f57bc17a8b7dd4faccde4fcd49e77b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca23a86c338955ac7fbd5ba2cf47bb79') in 0.002228 seconds 
+  Import took 0.003599 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.713165 seconds.
-  path: Assets/Resources/ScriptableObjects/1911.asset
-  artifactKey: Guid(b7f03c3703678a2409fd562b5c76acae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/ScriptableObjects/1911.asset using Guid(b7f03c3703678a2409fd562b5c76acae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11bacebb58b401802cda89b4820e8840') in 0.004444 seconds 
-  Import took 0.006482 seconds .
+  Time since last request: 0.000124 seconds.
+  path: Assets/Model/Weapon/Animation/Ak47 up.fbx
+  artifactKey: Guid(c4dc328f25c137c4eb85516ad6bc1205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Model/Weapon/Animation/Ak47 up.fbx using Guid(c4dc328f25c137c4eb85516ad6bc1205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '770f3a06c53801471b95f81b953415f7') in 0.002423 seconds 
+  Import took 0.003548 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 41.612355 seconds.
-  path: Assets/Animators/Player Animator.controller
-  artifactKey: Guid(3a08a7edbe8b5c44b8b622b2665107fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animators/Player Animator.controller using Guid(3a08a7edbe8b5c44b8b622b2665107fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a267d8bd3555ad9f44088c3b72fe5ab4') in 0.008545 seconds 
-  Import took 0.011294 seconds .
+  Time since last request: 0.000099 seconds.
+  path: Assets/Model/Weapon/Animation/M1911 down.fbx
+  artifactKey: Guid(c4fa1315b1f44034db08513c48c8a4e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Model/Weapon/Animation/M1911 down.fbx using Guid(c4fa1315b1f44034db08513c48c8a4e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '125221a6567d2dc419e6f646e46251ee') in 0.002798 seconds 
+  Import took 0.003948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000109 seconds.
+  path: Assets/Model/Weapon/Animation/M1911 walk.fbx
+  artifactKey: Guid(80a5d88da282ebd44aab8e312cc339d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Model/Weapon/Animation/M1911 walk.fbx using Guid(80a5d88da282ebd44aab8e312cc339d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d46bde7a78855421c45fadcb4bc102f') in 0.002518 seconds 
+  Import took 0.003672 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/Model/Weapon/Animation/M1911 idle.fbx
+  artifactKey: Guid(fb864b3ee6da7f642a3d95ffadb39ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Model/Weapon/Animation/M1911 idle.fbx using Guid(fb864b3ee6da7f642a3d95ffadb39ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de654cfff5ebd268481608dd0ba7f3de') in 0.002607 seconds 
+  Import took 0.003893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Model/Weapon/Animation/M1911 up.fbx
+  artifactKey: Guid(915d76bd1dc2dd842af67d6e04df75b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Model/Weapon/Animation/M1911 up.fbx using Guid(915d76bd1dc2dd842af67d6e04df75b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0cf006b1af136f7e7098bca24dc0025') in 0.002530 seconds 
+  Import took 0.003704 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000103 seconds.
+  path: Assets/Model/Weapon/Animation/870 idle.fbx
+  artifactKey: Guid(c99af169e3ec2b14e9310fc491f9bab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Model/Weapon/Animation/870 idle.fbx using Guid(c99af169e3ec2b14e9310fc491f9bab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1765afc18b2a9a3640d56662015b87df') in 0.002550 seconds 
+  Import took 0.003685 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002155 seconds.
+Registered in 0.000956 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.26 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.20 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.760 seconds
+- Completed reload, in  0.459 seconds
 Domain Reload Profiling:
-	ReloadAssembly (760ms)
-		BeginReloadAssembly (85ms)
+	ReloadAssembly (459ms)
+		BeginReloadAssembly (57ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (2ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (632ms)
-			LoadAssemblies (66ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (376ms)
+			LoadAssemblies (40ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (240ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (221ms)
+			SetupTypeCache (131ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (17ms)
+			SetupLoadedEditorAssemblies (140ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (2ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (54ms)
-				ProcessInitializeOnLoadAttributes (154ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
+				BeforeProcessingInitializeOnLoad (36ms)
+				ProcessInitializeOnLoadAttributes (96ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.26 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.18 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1524 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.3 MB.
-System memory in use after: 86.4 MB.
+System memory in use before: 69.8 MB.
+System memory in use after: 69.9 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1973.
-Total: 1.966200 ms (FindLiveObjects: 0.092700 ms CreateObjectMapping: 0.034100 ms MarkObjects: 1.826800 ms  DeleteObjects: 0.011900 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1965.
+Total: 1.364200 ms (FindLiveObjects: 0.058100 ms CreateObjectMapping: 0.017700 ms MarkObjects: 1.279100 ms  DeleteObjects: 0.008900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -251,626 +283,50 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 241.157140 seconds.
-  path: Assets/Prefabs/Player.prefab
-  artifactKey: Guid(1ea206c898432bb47ae40c68031a14c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player.prefab using Guid(1ea206c898432bb47ae40c68031a14c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73040ae0d10a31247c107f2907a4cf08') in 0.050888 seconds 
-  Import took 0.053794 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 31.043227 seconds.
-  path: Assets/Model/Weapon/Low Poly Arms AK47 Down.fbx
-  artifactKey: Guid(e91c2c8953c0cf64f871a5509c7982fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Low Poly Arms AK47 Down.fbx using Guid(e91c2c8953c0cf64f871a5509c7982fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dc97203942eea11f9e5943eccb1863e') in 0.009738 seconds 
-  Import took 0.012160 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000282 seconds.
-  path: Assets/Model/Weapon/Low Poly Arms AK47 Up.fbx
-  artifactKey: Guid(62fff2e28ecdb8f4dbc534708ea2056a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Low Poly Arms AK47 Up.fbx using Guid(62fff2e28ecdb8f4dbc534708ea2056a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '312b4cd7bff537373577230e80260add') in 0.004227 seconds 
-  Import took 0.006159 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000319 seconds.
-  path: Assets/Model/Weapon/Low Poly Arms M870 Up.fbx
-  artifactKey: Guid(1396a6ceddee2e745b5ab31f89c9d7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Low Poly Arms M870 Up.fbx using Guid(1396a6ceddee2e745b5ab31f89c9d7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f8aa3f0f4e32ada0f3d497928cf5f02') in 0.004048 seconds 
-  Import took 0.005883 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000278 seconds.
-  path: Assets/Model/Weapon/Low Poly Arms M870 Down.fbx
-  artifactKey: Guid(b085a30bd00a32c408232e38acbe23de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Low Poly Arms M870 Down.fbx using Guid(b085a30bd00a32c408232e38acbe23de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06d70505348484222e6dbbd3087a189c') in 0.003892 seconds 
-  Import took 0.005868 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.484933 seconds.
-  path: Assets/Model/Weapon/Animation
-  artifactKey: Guid(579cb48a68293354da03a709fde4f7c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation using Guid(579cb48a68293354da03a709fde4f7c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a198fe09f323459b27b9958296a0c85') in 0.001230 seconds 
-  Import took 0.003072 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 26.493958 seconds.
-  path: Assets/Model/Weapon/Animation/M1911 idle.fbx
-  artifactKey: Guid(fb864b3ee6da7f642a3d95ffadb39ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/M1911 idle.fbx using Guid(fb864b3ee6da7f642a3d95ffadb39ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '604596dd6885e96a8f6be9878df4167b') in 0.004553 seconds 
-  Import took 0.006818 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.756771 seconds.
-  path: Assets/Model/Weapon/Animation/870 down.fbx
-  artifactKey: Guid(32a1f78073edfa14d9843f428d1505db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/870 down.fbx using Guid(32a1f78073edfa14d9843f428d1505db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86b9bd38143f90016a8004acb2f13f42') in 0.004173 seconds 
-  Import took 0.006291 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000294 seconds.
-  path: Assets/Model/Weapon/Animation/Ak47 down.fbx
-  artifactKey: Guid(5406783e2731a854bb830c642aea2c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/Ak47 down.fbx using Guid(5406783e2731a854bb830c642aea2c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d33e9ed4b83fc022ec51b26d6a28bfe') in 0.003870 seconds 
-  Import took 0.005679 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000273 seconds.
-  path: Assets/Model/Weapon/Animation/Ak47 walk.fbx
-  artifactKey: Guid(035259c818fd7c74490da6380be58fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/Ak47 walk.fbx using Guid(035259c818fd7c74490da6380be58fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a55d5805bad86f13e784140cf6a845d8') in 0.004072 seconds 
-  Import took 0.005959 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000206 seconds.
-  path: Assets/Model/Weapon/Animation/870 walk.fbx
-  artifactKey: Guid(8cabc03f3dab8bb4d9e4c68d6dd00e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/870 walk.fbx using Guid(8cabc03f3dab8bb4d9e4c68d6dd00e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '271c3745c07fb2564a39d56ce7f3dd7b') in 0.004076 seconds 
-  Import took 0.006077 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000178 seconds.
-  path: Assets/Model/Weapon/Animation/870 up.fbx
-  artifactKey: Guid(5a434fa7a49e77546b200923c9e3d096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/870 up.fbx using Guid(5a434fa7a49e77546b200923c9e3d096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ce380b113d6dd74d3960ad9b5cec3fe') in 0.003875 seconds 
-  Import took 0.005776 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000342 seconds.
-  path: Assets/Model/Weapon/Animation/Ak47 idle.fbx
-  artifactKey: Guid(92f57bc17a8b7dd4faccde4fcd49e77b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/Ak47 idle.fbx using Guid(92f57bc17a8b7dd4faccde4fcd49e77b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a727d24cfbefe016ad22f31a64b9694') in 0.003994 seconds 
-  Import took 0.005858 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000276 seconds.
-  path: Assets/Model/Weapon/Animation/Ak47 up.fbx
-  artifactKey: Guid(c4dc328f25c137c4eb85516ad6bc1205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/Ak47 up.fbx using Guid(c4dc328f25c137c4eb85516ad6bc1205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0084e6972e645766c03a449e0c682c9c') in 0.004085 seconds 
-  Import took 0.005953 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000227 seconds.
-  path: Assets/Model/Weapon/Animation/M1911 down.fbx
-  artifactKey: Guid(c4fa1315b1f44034db08513c48c8a4e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/M1911 down.fbx using Guid(c4fa1315b1f44034db08513c48c8a4e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7811752836b003c176983a2443e1abea') in 0.004386 seconds 
-  Import took 0.006502 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000274 seconds.
-  path: Assets/Model/Weapon/Animation/M1911 walk.fbx
-  artifactKey: Guid(80a5d88da282ebd44aab8e312cc339d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/M1911 walk.fbx using Guid(80a5d88da282ebd44aab8e312cc339d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d52b2bf9a5a406c0c92ceff841248ce') in 0.004094 seconds 
-  Import took 0.006148 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000336 seconds.
-  path: Assets/Model/Weapon/Animation/M1911 up.fbx
-  artifactKey: Guid(915d76bd1dc2dd842af67d6e04df75b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/M1911 up.fbx using Guid(915d76bd1dc2dd842af67d6e04df75b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53c93ad40b5876f4b6d931abf8cdf82a') in 0.004363 seconds 
-  Import took 0.006411 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000262 seconds.
-  path: Assets/Model/Weapon/Animation/870 idle.fbx
-  artifactKey: Guid(c99af169e3ec2b14e9310fc491f9bab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/870 idle.fbx using Guid(c99af169e3ec2b14e9310fc491f9bab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2292438ba5b13abebc8b4bf111809f42') in 0.003998 seconds 
-  Import took 0.005907 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.408486 seconds.
-  path: Assets/Model/Weapon/Animation/Low Poly Arms.fbx
-  artifactKey: Guid(3473fa15b87c130439133f009d2ec1f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/Low Poly Arms.fbx using Guid(3473fa15b87c130439133f009d2ec1f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fb035b57aa30cb0c02195464ff309b7') in 0.041055 seconds 
-  Import took 0.043437 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 53.952299 seconds.
-  path: Assets/Model/Low Poly Arms.fbx
-  artifactKey: Guid(03e8198bce99c5b4286c41acf01513f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Low Poly Arms.fbx using Guid(03e8198bce99c5b4286c41acf01513f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3af2362c613e55b43d70e11a7474acc1') in 0.015364 seconds 
-  Import took 0.017506 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.565153 seconds.
-  path: Assets/Model/Weapon/Animation/870 down.fbx
-  artifactKey: Guid(32a1f78073edfa14d9843f428d1505db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/870 down.fbx using Guid(32a1f78073edfa14d9843f428d1505db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0601501190974ebe5bb84b1d1a6dc719') in 0.004193 seconds 
-  Import took 0.006441 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.906652 seconds.
-  path: Assets/Model/Weapon/Animation/870 idle.fbx
-  artifactKey: Guid(c99af169e3ec2b14e9310fc491f9bab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/870 idle.fbx using Guid(c99af169e3ec2b14e9310fc491f9bab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ca97526f6f3b8529b5711fc339d8364') in 0.004018 seconds 
-  Import took 0.006179 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.101600 seconds.
-  path: Assets/Model/Weapon/Animation/870 up.fbx
-  artifactKey: Guid(5a434fa7a49e77546b200923c9e3d096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/870 up.fbx using Guid(5a434fa7a49e77546b200923c9e3d096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0a761e7579cfee44fc8dde1f4879946') in 0.004178 seconds 
-  Import took 0.006407 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.429352 seconds.
-  path: Assets/Model/Weapon/Animation/870 walk.fbx
-  artifactKey: Guid(8cabc03f3dab8bb4d9e4c68d6dd00e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/870 walk.fbx using Guid(8cabc03f3dab8bb4d9e4c68d6dd00e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4d0c42821c1627ac1a4df811f77d7fb') in 0.005156 seconds 
-  Import took 0.007430 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.564654 seconds.
-  path: Assets/Model/Weapon/Animation/Ak47 down.fbx
-  artifactKey: Guid(5406783e2731a854bb830c642aea2c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/Ak47 down.fbx using Guid(5406783e2731a854bb830c642aea2c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a2ffb833080fce1349fa35a731f57cc') in 0.004049 seconds 
-  Import took 0.006297 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.583907 seconds.
-  path: Assets/Model/Weapon/Animation/Ak47 idle.fbx
-  artifactKey: Guid(92f57bc17a8b7dd4faccde4fcd49e77b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/Ak47 idle.fbx using Guid(92f57bc17a8b7dd4faccde4fcd49e77b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06e719f2c8c6efee4119b519f90b2ee5') in 0.004141 seconds 
-  Import took 0.006441 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.941918 seconds.
-  path: Assets/Model/Weapon/Animation/Ak47 up.fbx
-  artifactKey: Guid(c4dc328f25c137c4eb85516ad6bc1205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/Ak47 up.fbx using Guid(c4dc328f25c137c4eb85516ad6bc1205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a910296775fa56c02fdcb332327a934') in 0.003930 seconds 
-  Import took 0.006236 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.531995 seconds.
-  path: Assets/Model/Weapon/Animation/Ak47 walk.fbx
-  artifactKey: Guid(035259c818fd7c74490da6380be58fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/Ak47 walk.fbx using Guid(035259c818fd7c74490da6380be58fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1769217ed756390a15fb278a00a568c') in 0.004424 seconds 
-  Import took 0.006686 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.960741 seconds.
-  path: Assets/Model/Weapon/Animation/M1911 down.fbx
-  artifactKey: Guid(c4fa1315b1f44034db08513c48c8a4e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/M1911 down.fbx using Guid(c4fa1315b1f44034db08513c48c8a4e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ddd30eebd64a2e832e9bf3f8f9ea488') in 0.004108 seconds 
-  Import took 0.006231 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.680613 seconds.
-  path: Assets/Model/Weapon/Animation/M1911 idle.fbx
-  artifactKey: Guid(fb864b3ee6da7f642a3d95ffadb39ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/M1911 idle.fbx using Guid(fb864b3ee6da7f642a3d95ffadb39ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45ea23e1fb138604c7f8fd1ae20f8e91') in 0.004550 seconds 
-  Import took 0.006796 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.067438 seconds.
-  path: Assets/Model/Weapon/Animation/M1911 up.fbx
-  artifactKey: Guid(915d76bd1dc2dd842af67d6e04df75b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/M1911 up.fbx using Guid(915d76bd1dc2dd842af67d6e04df75b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'add507fe0e2b37efd425e8536c93e599') in 0.004644 seconds 
-  Import took 0.006823 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.094992 seconds.
-  path: Assets/Model/Weapon/Animation/M1911 walk.fbx
-  artifactKey: Guid(80a5d88da282ebd44aab8e312cc339d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/M1911 walk.fbx using Guid(80a5d88da282ebd44aab8e312cc339d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11f051ab16203bfdcbc33e61172d0dfb') in 0.005438 seconds 
-  Import took 0.007798 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.673220 seconds.
-  path: Assets/Model/Weapon/Animation/870 down.fbx
-  artifactKey: Guid(32a1f78073edfa14d9843f428d1505db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/870 down.fbx using Guid(32a1f78073edfa14d9843f428d1505db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75b805ca0d5f51b10230563f707600dd') in 0.003954 seconds 
-  Import took 0.005933 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/Model/Weapon/Animation/Ak47 down.fbx
-  artifactKey: Guid(5406783e2731a854bb830c642aea2c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/Ak47 down.fbx using Guid(5406783e2731a854bb830c642aea2c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bcd65523d4c3e25f180cb6b5302be5a') in 0.003744 seconds 
-  Import took 0.005544 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000287 seconds.
-  path: Assets/Model/Weapon/Animation/Ak47 walk.fbx
-  artifactKey: Guid(035259c818fd7c74490da6380be58fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/Ak47 walk.fbx using Guid(035259c818fd7c74490da6380be58fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b6cf874d796f1ef3a88c9b9d7c6b110') in 0.003721 seconds 
-  Import took 0.005608 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000251 seconds.
-  path: Assets/Model/Weapon/Animation/870 walk.fbx
-  artifactKey: Guid(8cabc03f3dab8bb4d9e4c68d6dd00e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/870 walk.fbx using Guid(8cabc03f3dab8bb4d9e4c68d6dd00e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60dfdf9641c1bd87a18a5518b382a742') in 0.003709 seconds 
-  Import took 0.005654 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000271 seconds.
-  path: Assets/Model/Weapon/Animation/870 up.fbx
-  artifactKey: Guid(5a434fa7a49e77546b200923c9e3d096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/870 up.fbx using Guid(5a434fa7a49e77546b200923c9e3d096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd41845326c6e1a0efacec90c7509b879') in 0.003692 seconds 
-  Import took 0.005545 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000236 seconds.
-  path: Assets/Model/Weapon/Animation/Ak47 idle.fbx
-  artifactKey: Guid(92f57bc17a8b7dd4faccde4fcd49e77b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/Ak47 idle.fbx using Guid(92f57bc17a8b7dd4faccde4fcd49e77b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29a530cdf152eb63ba6a73e7add3f8d7') in 0.003861 seconds 
-  Import took 0.005680 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000248 seconds.
-  path: Assets/Model/Weapon/Animation/Ak47 up.fbx
-  artifactKey: Guid(c4dc328f25c137c4eb85516ad6bc1205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/Ak47 up.fbx using Guid(c4dc328f25c137c4eb85516ad6bc1205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b64f20986115f41099600566ee0e46c') in 0.003615 seconds 
-  Import took 0.005407 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/Model/Weapon/Animation/M1911 down.fbx
-  artifactKey: Guid(c4fa1315b1f44034db08513c48c8a4e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/M1911 down.fbx using Guid(c4fa1315b1f44034db08513c48c8a4e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f7f30aaefcee2ad1216d91ca827f73') in 0.003841 seconds 
-  Import took 0.005680 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/Model/Weapon/Animation/M1911 walk.fbx
-  artifactKey: Guid(80a5d88da282ebd44aab8e312cc339d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/M1911 walk.fbx using Guid(80a5d88da282ebd44aab8e312cc339d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0b5849d8fd0bde33d2a7911def7617d') in 0.004203 seconds 
-  Import took 0.006188 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/Model/Weapon/Animation/M1911 idle.fbx
-  artifactKey: Guid(fb864b3ee6da7f642a3d95ffadb39ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/M1911 idle.fbx using Guid(fb864b3ee6da7f642a3d95ffadb39ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a648dea23819e8ae66875eab052765e') in 0.004015 seconds 
-  Import took 0.006067 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000223 seconds.
-  path: Assets/Model/Weapon/Animation/M1911 up.fbx
-  artifactKey: Guid(915d76bd1dc2dd842af67d6e04df75b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/M1911 up.fbx using Guid(915d76bd1dc2dd842af67d6e04df75b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f824ad8c2e34adee19b495333348d0e') in 0.004143 seconds 
-  Import took 0.006059 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000332 seconds.
-  path: Assets/Model/Weapon/Animation/870 idle.fbx
-  artifactKey: Guid(c99af169e3ec2b14e9310fc491f9bab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/870 idle.fbx using Guid(c99af169e3ec2b14e9310fc491f9bab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1a281b3b7acf129b618a9e4871d634f') in 0.003842 seconds 
-  Import took 0.005795 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.124645 seconds.
-  path: Assets/Model/Weapon/Animation/870 idle.fbx
-  artifactKey: Guid(c99af169e3ec2b14e9310fc491f9bab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/870 idle.fbx using Guid(c99af169e3ec2b14e9310fc491f9bab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32b0c965f1db745abebcd56f5ae75c52') in 0.004386 seconds 
-  Import took 0.006530 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.992162 seconds.
-  path: Assets/Model/Weapon/Animation/870 walk.fbx
-  artifactKey: Guid(8cabc03f3dab8bb4d9e4c68d6dd00e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/870 walk.fbx using Guid(8cabc03f3dab8bb4d9e4c68d6dd00e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41653b74523bb1484d3932e48c83c171') in 0.004482 seconds 
-  Import took 0.006595 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.527146 seconds.
-  path: Assets/Model/Weapon/Animation/Ak47 idle.fbx
-  artifactKey: Guid(92f57bc17a8b7dd4faccde4fcd49e77b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/Ak47 idle.fbx using Guid(92f57bc17a8b7dd4faccde4fcd49e77b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bff90aa2780bbd7b817046a0cf1480be') in 0.004081 seconds 
-  Import took 0.006150 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.749357 seconds.
-  path: Assets/Model/Weapon/Animation/Ak47 walk.fbx
-  artifactKey: Guid(035259c818fd7c74490da6380be58fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/Ak47 walk.fbx using Guid(035259c818fd7c74490da6380be58fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c81115da6aec3456c30cb903fbe25cda') in 0.004892 seconds 
-  Import took 0.007321 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.671345 seconds.
-  path: Assets/Model/Weapon/Animation/M1911 idle.fbx
-  artifactKey: Guid(fb864b3ee6da7f642a3d95ffadb39ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/M1911 idle.fbx using Guid(fb864b3ee6da7f642a3d95ffadb39ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd12c234919e120a519a9b30c50cf7faa') in 0.004098 seconds 
-  Import took 0.006171 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.524711 seconds.
-  path: Assets/Model/Weapon/Animation/M1911 walk.fbx
-  artifactKey: Guid(80a5d88da282ebd44aab8e312cc339d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/M1911 walk.fbx using Guid(80a5d88da282ebd44aab8e312cc339d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0aef9b2f06a6a1d17053eb852b72805') in 0.004298 seconds 
-  Import took 0.006629 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.796208 seconds.
-  path: Assets/Model/Weapon/Animation/870 down.fbx
-  artifactKey: Guid(32a1f78073edfa14d9843f428d1505db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/870 down.fbx using Guid(32a1f78073edfa14d9843f428d1505db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ff572d21e6495a99170abae617fc535') in 0.004608 seconds 
-  Import took 0.006695 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.690308 seconds.
-  path: Assets/Model/Weapon/Animation/870 idle.fbx
-  artifactKey: Guid(c99af169e3ec2b14e9310fc491f9bab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/870 idle.fbx using Guid(c99af169e3ec2b14e9310fc491f9bab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31c0d9673eb177d7109d97af0f36410d') in 0.004559 seconds 
-  Import took 0.006734 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.765870 seconds.
-  path: Assets/Model/Weapon/Animation/870 up.fbx
-  artifactKey: Guid(5a434fa7a49e77546b200923c9e3d096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/870 up.fbx using Guid(5a434fa7a49e77546b200923c9e3d096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07d6acaa6f01dcc694b8338f67a98f76') in 0.004409 seconds 
-  Import took 0.006566 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.602994 seconds.
-  path: Assets/Model/Weapon/Animation/870 walk.fbx
-  artifactKey: Guid(8cabc03f3dab8bb4d9e4c68d6dd00e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/870 walk.fbx using Guid(8cabc03f3dab8bb4d9e4c68d6dd00e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fd1d92e4572cbc5ee0ac1c400733927') in 0.004073 seconds 
-  Import took 0.006175 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.019266 seconds.
-  path: Assets/Model/Weapon/Animation/Ak47 down.fbx
-  artifactKey: Guid(5406783e2731a854bb830c642aea2c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/Ak47 down.fbx using Guid(5406783e2731a854bb830c642aea2c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a75f7b711c3dd3191b13ab666dc163f5') in 0.004469 seconds 
-  Import took 0.006794 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000167 seconds.
-  path: Assets/Model/Weapon/Animation/Ak47 walk.fbx
-  artifactKey: Guid(035259c818fd7c74490da6380be58fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/Ak47 walk.fbx using Guid(035259c818fd7c74490da6380be58fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20cac491a21f35a86c70c5d30093817f') in 0.003864 seconds 
-  Import took 0.005900 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000263 seconds.
-  path: Assets/Model/Weapon/Animation/Ak47 idle.fbx
-  artifactKey: Guid(92f57bc17a8b7dd4faccde4fcd49e77b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/Ak47 idle.fbx using Guid(92f57bc17a8b7dd4faccde4fcd49e77b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f09e0ad293508f50cd85040f6b557fb4') in 0.004218 seconds 
-  Import took 0.006221 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/Model/Weapon/Animation/Ak47 up.fbx
-  artifactKey: Guid(c4dc328f25c137c4eb85516ad6bc1205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/Ak47 up.fbx using Guid(c4dc328f25c137c4eb85516ad6bc1205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6b7adeacfb916aa70f0f48806656e2e') in 0.003699 seconds 
-  Import took 0.005536 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.944195 seconds.
-  path: Assets/Model/Weapon/Animation/M1911 down.fbx
-  artifactKey: Guid(c4fa1315b1f44034db08513c48c8a4e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/M1911 down.fbx using Guid(c4fa1315b1f44034db08513c48c8a4e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b21cea977af1999617c8c5da78cd3065') in 0.004372 seconds 
-  Import took 0.006545 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000281 seconds.
-  path: Assets/Model/Weapon/Animation/M1911 walk.fbx
-  artifactKey: Guid(80a5d88da282ebd44aab8e312cc339d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/M1911 walk.fbx using Guid(80a5d88da282ebd44aab8e312cc339d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9510064d573535b2295ccd02408626e') in 0.004171 seconds 
-  Import took 0.006322 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/Model/Weapon/Animation/M1911 idle.fbx
-  artifactKey: Guid(fb864b3ee6da7f642a3d95ffadb39ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/M1911 idle.fbx using Guid(fb864b3ee6da7f642a3d95ffadb39ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b563b244bd667b4b755101caa42e99bb') in 0.004607 seconds 
-  Import took 0.006890 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000317 seconds.
-  path: Assets/Model/Weapon/Animation/M1911 up.fbx
-  artifactKey: Guid(915d76bd1dc2dd842af67d6e04df75b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/M1911 up.fbx using Guid(915d76bd1dc2dd842af67d6e04df75b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c96109b972a39c105a9ae91f849b91b5') in 0.004155 seconds 
-  Import took 0.006093 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 121.909137 seconds.
-  path: Assets/Model/Weapon/M1911 Animator.controller
-  artifactKey: Guid(830d6394fe4be1840bfc762f38490c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/M1911 Animator.controller using Guid(830d6394fe4be1840bfc762f38490c29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99ed7fcb4270e90e604d18ebed988858') in 0.001780 seconds 
-  Import took 0.003983 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 239.519076 seconds.
-  path: Assets/Model/Weapon/Animation/M1911 up.fbx
-  artifactKey: Guid(915d76bd1dc2dd842af67d6e04df75b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/M1911 up.fbx using Guid(915d76bd1dc2dd842af67d6e04df75b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a2f71fc89317fc9e0765d4742e1bb30') in 0.004579 seconds 
-  Import took 0.007071 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.177294 seconds.
-  path: Assets/Model/Weapon/Animation/M1911 walk.fbx
-  artifactKey: Guid(80a5d88da282ebd44aab8e312cc339d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/M1911 walk.fbx using Guid(80a5d88da282ebd44aab8e312cc339d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74848a9df0e8e66f39d1bf7b39f35f69') in 0.004888 seconds 
-  Import took 0.007299 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 249.289185 seconds.
-  path: Assets/Scripts/Inventory.cs
-  artifactKey: Guid(7680722d76a30e040baea6dc148f3490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Inventory.cs using Guid(7680722d76a30e040baea6dc148f3490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a154859dadce703fb3d47cdd3052613') in 0.001467 seconds 
-  Import took 0.003903 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 95.762436 seconds.
-  path: Assets/Scripts/EquipmentManager.cs
-  artifactKey: Guid(c3634d9b8eb252240a4d8c0b057c9271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/EquipmentManager.cs using Guid(c3634d9b8eb252240a4d8c0b057c9271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24982a8a3cd08052b76fb9416cd99eea') in 0.001688 seconds 
-  Import took 0.003898 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.725090 seconds.
-  path: Assets/Scripts/PlayerPickup.cs
-  artifactKey: Guid(735d57a1dcd1ada43b8b171e1b8304df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PlayerPickup.cs using Guid(735d57a1dcd1ada43b8b171e1b8304df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99e28e3f73fec1b63d50ba5eef95e20c') in 0.001688 seconds 
-  Import took 0.004154 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.895353 seconds.
-  path: Assets/Scripts/WeaponShooting.cs
-  artifactKey: Guid(c451d592300553c46aaac883c4e4395c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/WeaponShooting.cs using Guid(c451d592300553c46aaac883c4e4395c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8083d48e12902cf54bfd9e61385508af') in 0.001516 seconds 
-  Import took 0.003669 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.244309 seconds.
-  path: Assets/Scripts/Items/Weapon.cs
-  artifactKey: Guid(8672a360bca9ddd44b1e18cc80703009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Items/Weapon.cs using Guid(8672a360bca9ddd44b1e18cc80703009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c5a4e5f8889fe174e150919dc854dbd') in 0.001176 seconds 
-  Import took 0.003097 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 132.993046 seconds.
-  path: Assets/Scripts/PlayerController.cs
-  artifactKey: Guid(921c1e18ebbd1cc4288ae3b3d5606936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PlayerController.cs using Guid(921c1e18ebbd1cc4288ae3b3d5606936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ee1a6fafa7e5d9bc880b8b2ad1a4fd9') in 0.001386 seconds 
-  Import took 0.003470 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 25.863788 seconds.
-  path: Assets/Animators
-  artifactKey: Guid(1865c8818d3f7b54f92d583ee16e6833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animators using Guid(1865c8818d3f7b54f92d583ee16e6833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99002eadf75e728603f98016b6fc6788') in 0.001245 seconds 
-  Import took 0.003306 seconds .
-
-========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001999 seconds.
+Registered in 0.000971 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.27 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.20 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.742 seconds
+- Completed reload, in  0.449 seconds
 Domain Reload Profiling:
-	ReloadAssembly (742ms)
-		BeginReloadAssembly (83ms)
+	ReloadAssembly (449ms)
+		BeginReloadAssembly (55ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (2ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (614ms)
-			LoadAssemblies (66ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (366ms)
+			LoadAssemblies (41ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (217ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (217ms)
+			SetupTypeCache (132ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (16ms)
+			SetupLoadedEditorAssemblies (135ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (53ms)
-				ProcessInitializeOnLoadAttributes (151ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (2ms)
+				BeforeProcessingInitializeOnLoad (33ms)
+				ProcessInitializeOnLoadAttributes (93ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.27 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.18 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1524 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.4 MB.
-System memory in use after: 87.5 MB.
+System memory in use before: 69.8 MB.
+System memory in use after: 69.9 MB.
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2012.
-Total: 1.888900 ms (FindLiveObjects: 0.101200 ms CreateObjectMapping: 0.038100 ms MarkObjects: 1.733700 ms  DeleteObjects: 0.014900 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1967.
+Total: 1.345300 ms (FindLiveObjects: 0.062300 ms CreateObjectMapping: 0.017700 ms MarkObjects: 1.252200 ms  DeleteObjects: 0.012600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -883,108 +339,4 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 613.550114 seconds.
-  path: Assets/Scripts/AnimationEventManager.cs
-  artifactKey: Guid(0fc21274b369e4144aed068337485689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/AnimationEventManager.cs using Guid(0fc21274b369e4144aed068337485689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b09904ced9c3a289aa541514ee6b8ab7') in 0.003521 seconds 
-  Import took 0.005862 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 145.094713 seconds.
-  path: Assets/Model/Weapon/Animation/870 down.fbx
-  artifactKey: Guid(32a1f78073edfa14d9843f428d1505db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/870 down.fbx using Guid(32a1f78073edfa14d9843f428d1505db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cfc45123694761ef1ff8a149db475b2') in 0.019447 seconds 
-  Import took 0.021867 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.595996 seconds.
-  path: Assets/Model/Weapon/Animation/Ak47 down.fbx
-  artifactKey: Guid(5406783e2731a854bb830c642aea2c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/Ak47 down.fbx using Guid(5406783e2731a854bb830c642aea2c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1629abc563eaea7dd353ee77751d132') in 0.005151 seconds 
-  Import took 0.007543 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.717088 seconds.
-  path: Assets/Model/Weapon/Animation/M1911 down.fbx
-  artifactKey: Guid(c4fa1315b1f44034db08513c48c8a4e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/M1911 down.fbx using Guid(c4fa1315b1f44034db08513c48c8a4e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74cd62903cc98799cf19c344cc471b13') in 0.004241 seconds 
-  Import took 0.006328 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.565423 seconds.
-  path: Assets/Model/Weapon/Animation/870 up.fbx
-  artifactKey: Guid(5a434fa7a49e77546b200923c9e3d096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/870 up.fbx using Guid(5a434fa7a49e77546b200923c9e3d096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce8609c1438708abdc936dd4028adc89') in 0.004401 seconds 
-  Import took 0.006659 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.867140 seconds.
-  path: Assets/Model/Weapon/Animation/Ak47 up.fbx
-  artifactKey: Guid(c4dc328f25c137c4eb85516ad6bc1205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/Ak47 up.fbx using Guid(c4dc328f25c137c4eb85516ad6bc1205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b188403605572557ac840709febcae48') in 0.004304 seconds 
-  Import took 0.006379 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.821637 seconds.
-  path: Assets/Model/Weapon/Animation/M1911 up.fbx
-  artifactKey: Guid(915d76bd1dc2dd842af67d6e04df75b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/M1911 up.fbx using Guid(915d76bd1dc2dd842af67d6e04df75b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7c2f744804bf3fd71ff9d240c082bc1') in 0.004912 seconds 
-  Import took 0.006972 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.284428 seconds.
-  path: Assets/Model/Weapon/Animation/Ak47 up.fbx
-  artifactKey: Guid(c4dc328f25c137c4eb85516ad6bc1205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/Ak47 up.fbx using Guid(c4dc328f25c137c4eb85516ad6bc1205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9decec12e20cda9010ecf2b9ef3f9cf0') in 0.004090 seconds 
-  Import took 0.006167 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 94.014904 seconds.
-  path: Assets/Model/Weapon/Animation/870 down.fbx
-  artifactKey: Guid(32a1f78073edfa14d9843f428d1505db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/870 down.fbx using Guid(32a1f78073edfa14d9843f428d1505db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '208b4e6dcb3532a83d06816e7582f440') in 0.004398 seconds 
-  Import took 0.006456 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.803578 seconds.
-  path: Assets/Model/Weapon/Animation/Ak47 down.fbx
-  artifactKey: Guid(5406783e2731a854bb830c642aea2c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/Ak47 down.fbx using Guid(5406783e2731a854bb830c642aea2c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b2a90d7f5ce291eb3dbbb2d6da4fb31') in 0.004417 seconds 
-  Import took 0.006516 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.295111 seconds.
-  path: Assets/Model/Weapon/Animation/M1911 down.fbx
-  artifactKey: Guid(c4fa1315b1f44034db08513c48c8a4e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/M1911 down.fbx using Guid(c4fa1315b1f44034db08513c48c8a4e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcdb636a580d92dcd807c77aeb69fd53') in 0.004409 seconds 
-  Import took 0.006561 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.069822 seconds.
-  path: Assets/Model/Weapon/Animation/870 up.fbx
-  artifactKey: Guid(5a434fa7a49e77546b200923c9e3d096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/870 up.fbx using Guid(5a434fa7a49e77546b200923c9e3d096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d4c0fad7eaa7235e157423d1ec2d362') in 0.004863 seconds 
-  Import took 0.007152 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.955701 seconds.
-  path: Assets/Model/Weapon/Animation/M1911 up.fbx
-  artifactKey: Guid(915d76bd1dc2dd842af67d6e04df75b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/Weapon/Animation/M1911 up.fbx using Guid(915d76bd1dc2dd842af67d6e04df75b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05cff4abe1523ad2c7d3d2368e8018c6') in 0.005131 seconds 
-  Import took 0.007253 seconds .
-
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
