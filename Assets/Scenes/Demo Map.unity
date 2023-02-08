@@ -2576,7 +2576,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
+  m_VoxelSize: 0.13333334
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 23800000, guid: 3a0a76d1ba6fa7440a54ad6ada085bec, type: 2}
 --- !u!4 &276751678
@@ -15323,7 +15323,6 @@ GameObject:
   - component: {fileID: 1823546061}
   - component: {fileID: 1823546060}
   - component: {fileID: 1823546059}
-  - component: {fileID: 1823546058}
   m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
@@ -15345,20 +15344,6 @@ Transform:
   m_Father: {fileID: 1948091940}
   m_RootOrder: 154
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &1823546058
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1823546056}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!65 &1823546059
 BoxCollider:
   m_ObjectHideFlags: 0
