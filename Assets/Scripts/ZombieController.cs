@@ -40,7 +40,7 @@ public class ZombieController : MonoBehaviour
                 hasStopped = true;
                 timeOfLastAttack = Time.time;
             }
-            if (Time.time >= timeOfLastAttack + stats.attackSpeed);
+            if (Time.time >= timeOfLastAttack + stats.attackSpeed)
             {
                 timeOfLastAttack = Time.time;
                 CharacterStats targetStats = target.GetComponent<CharacterStats>();
@@ -69,6 +69,7 @@ public class ZombieController : MonoBehaviour
     {
         anim.SetTrigger("attack");
         stats.DealDamage(statsToDamage);
+        //Debug.Log("Attacking");
     }
 
     private void GetReferences()
