@@ -26,7 +26,7 @@ public class ZombieController : MonoBehaviour
 
     private void MoveToTarget()
     {
-        agent.SetDestination(target.position);
+        agent.SetDestination(new Vector3(target.position.x,0, target.position.z));
         anim.SetFloat("Speed", 1f, 0.3f, Time.deltaTime);
         RotateToTarget();
 
