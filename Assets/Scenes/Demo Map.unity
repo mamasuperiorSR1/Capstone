@@ -2129,6 +2129,17 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.017, y: 0.41400003, z: 0.033}
   m_TimeToStationary: 0.5
+--- !u!114 &263239229 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 166986650941727337, guid: 811194f96cb266d4a875856633aec8c6, type: 3}
+  m_PrefabInstance: {fileID: 8033595318659247048}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f46026cfc54421b499c9c093ea4adc62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &264846246 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9b21fe96458cc404e9d2036bbbba4752, type: 3}
@@ -18418,6 +18429,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2169119916539432569, guid: 1ea206c898432bb47ae40c68031a14c9, type: 3}
+      propertyPath: weaponUI
+      value: 
+      objectReference: {fileID: 263239229}
+    - target: {fileID: 2169119916539432569, guid: 1ea206c898432bb47ae40c68031a14c9, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -18450,6 +18465,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 166986649181314111, guid: 811194f96cb266d4a875856633aec8c6, type: 3}
+      propertyPath: m_Text
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 166986649311011830, guid: 811194f96cb266d4a875856633aec8c6, type: 3}
+      propertyPath: m_Text
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8033595317425118850, guid: 811194f96cb266d4a875856633aec8c6, type: 3}
       propertyPath: m_Enabled
       value: 1
