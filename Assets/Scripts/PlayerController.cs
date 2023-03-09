@@ -41,6 +41,11 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if (!GetComponent<PlayerStats>().IsDead()&&Input.GetKeyDown(KeyCode.Escape))
+        {
+            QSTXFrameWork.UI.MVP.UIContainer.Instance.Enter(QSTXFrameWork.UI.MVP.UIVIewID.PauseViewID);
+            return;
+        }
         CheckGrouned();
         JumpAndFall();
         InputToMove();
