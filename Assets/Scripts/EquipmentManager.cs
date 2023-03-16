@@ -33,11 +33,6 @@ public class EquipmentManager : MonoBehaviour
             UnequipWeapon();
             EquipWeapon(inventory.GetItem(1));
         }
-        if (Input.GetKeyDown(KeyCode.Alpha3) && currentlyEquippedWeapon != 2)
-        {
-            UnequipWeapon();
-            EquipWeapon(inventory.GetItem(2));
-        }
     }
 
     private void EquipWeapon(Weapon weapon)
@@ -50,12 +45,7 @@ public class EquipmentManager : MonoBehaviour
     private void UnequipWeapon()
     {
         anim.SetTrigger("unequipWeapon");
-    }
-
-    private void InitVariables()
-    {
-        inventory.AddItem(defaultWeapon);
-        EquipWeapon(inventory.GetItem(2));
+        Debug.Log("unequipWeapon");
     }
 
     private void GetReferences()

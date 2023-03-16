@@ -5,7 +5,7 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     // 0 = primary, 1 = secondary, 2 = melee
-    [SerializeField] private Weapon[] weapons;
+    [SerializeField] public Weapon[] weapons;
 
     private WeaponShooting shooting;
     private HUD hud;
@@ -24,7 +24,6 @@ public class Inventory : MonoBehaviour
     public void AddItem(Weapon newItem)
     {
         int newItemIndex = (int)newItem.weaponStyle;
-
         if (weapons[newItemIndex] != null)
         {
             RemoveItem(newItemIndex);
