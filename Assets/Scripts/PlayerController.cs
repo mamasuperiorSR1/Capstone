@@ -41,12 +41,6 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (!GetComponent<PlayerStats>().IsDead()&&Input.GetKeyDown(KeyCode.Escape))
-        {
-            QSTXFrameWork.UI.MVP.UIContainer.Instance.Enter(QSTXFrameWork.UI.MVP.UIVIewID.PauseViewID);
-            return;
-        }
-
         CheckGrouned();
         JumpAndFall();
         InputToMove();
@@ -98,7 +92,6 @@ public class PlayerController : MonoBehaviour
 
     private void JumpAndFall()
     {
-        /*
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             velocity.y += Mathf.Sqrt(jump * -2f * gravity);
@@ -108,7 +101,6 @@ public class PlayerController : MonoBehaviour
         {
             velocity.y = -2f;
         }
-        */
 
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
