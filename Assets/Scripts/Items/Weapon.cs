@@ -12,7 +12,6 @@ public class Weapon : Item
     public float range;
     public WeaponType weaponType;
     public WeaponStyle weaponStyle;
-
 }
 
 public enum WeaponType { Melee, Pistol, AR, Shotgun, Sniper}

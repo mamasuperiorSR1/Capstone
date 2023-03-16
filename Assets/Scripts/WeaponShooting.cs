@@ -18,6 +18,10 @@ public class WeaponShooting : MonoBehaviour
     [SerializeField] private bool primaryMagazineIsEmpty = false;
     [SerializeField] private bool secondaryMagazineIsEmpty = false;
 
+    [SerializeField] private AudioSource pistolsound;
+    [SerializeField] private AudioSource arsound;
+    [SerializeField] private AudioSource shotgunsound;
+
     private Camera cam;
     private Inventory inventory;
     private EquipmentManager manager;
@@ -47,18 +51,31 @@ public class WeaponShooting : MonoBehaviour
     private void Shoot()
     {
         CheckCanShoot(manager.currentlyEquippedWeapon);
-
+        
         if (canShoot && canReload)
         {
             Weapon currentWeapon = inventory.GetItem(manager.currentlyEquippedWeapon);
 
             if (Time.time > lastShootTime + currentWeapon.fireRate)
             {
-                Debug.Log("Shoot");
+                //Debug.Log("Shoot");
+                
                 lastShootTime = Time.time;
 
                 RaycastShoot(currentWeapon);
                 UseAmmo((int)currentWeapon.weaponStyle, 1, 0);
+                if (manager.currentWeaponAudio == 1 && !pistolsound.isPlaying)
+                {
+                    pistolsound.Play();
+                }
+                if (manager.currentWeaponAudio == 2 && !arsound.isPlaying)
+                {
+                    arsound.Play();
+                }
+                if (manager.currentWeaponAudio == 3 && !shotgunsound.isPlaying)
+                {
+                    shotgunsound.Play();
+                }
             }
         }
         else

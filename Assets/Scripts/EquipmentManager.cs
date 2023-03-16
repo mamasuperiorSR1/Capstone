@@ -7,6 +7,7 @@ public class EquipmentManager : MonoBehaviour
     public int currentlyEquippedWeapon = 2;
     public GameObject currentWeaponObject = null;
     public Transform currentWeaponBarrel = null;
+    public int currentWeaponAudio;
 
     public Transform WeaponHolderR = null;
     private Animator anim;
@@ -49,6 +50,8 @@ public class EquipmentManager : MonoBehaviour
     private void EquipWeapon(Weapon weapon)
     {
         currentlyEquippedWeapon = (int)weapon.weaponStyle;
+        currentWeaponAudio = (int)weapon.weaponType;
+        //Debug.Log(currentWeaponAudio);
         anim.SetInteger("weaponType", (int)weapon.weaponType);
         hud.UpdateWeaponUI(weapon);
     }
@@ -56,7 +59,6 @@ public class EquipmentManager : MonoBehaviour
     private void UnequipWeapon()
     {
         anim.SetTrigger("unequipWeapon");
-        Debug.Log("unequipWeapon");
     }
 
     private void GetReferences()
