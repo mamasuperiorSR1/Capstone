@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using QSTXFrameWork.UI.MVP;
 
 public class CharacterStats : MonoBehaviour
 {
@@ -19,6 +20,10 @@ public class CharacterStats : MonoBehaviour
         if (health <= 0)
         {
             health = 0;
+            if (!isDead)
+            {
+                UIContainer.Instance.Enter(UIVIewID.GameEndViewID);
+            }
             Die();
         }
 
