@@ -18,7 +18,7 @@ public class Inventory : MonoBehaviour
 
     private void InitVariables()
     {
-        weapons = new Weapon[3];
+        weapons = new Weapon[2];
     }
 
     public void AddItem(Weapon newItem)

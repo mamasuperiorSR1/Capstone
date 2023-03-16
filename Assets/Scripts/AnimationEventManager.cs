@@ -22,6 +22,7 @@ public class AnimationEventManager : MonoBehaviour
     {
         DestroyWeapon();
         manager.currentWeaponObject = Instantiate(inventory.GetItem(manager.currentlyEquippedWeapon).prefab, manager.WeaponHolderR);
+        Debug.Log("instantiating weapon");
         manager.currentWeaponBarrel = manager.currentWeaponObject.transform.GetChild(0);
         manager.currentWeaponAnim = manager.currentWeaponObject.GetComponent<Animator>();
     }
