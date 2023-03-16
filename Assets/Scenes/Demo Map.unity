@@ -3973,7 +3973,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83d417698885e0949bf3c3066119bed0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13.79
+      value: 16.35
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 83d417698885e0949bf3c3066119bed0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6956,7 +6956,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: abbefebe995159c45bacd52e74f9ffb8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.73355
+      value: -13.69
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: abbefebe995159c45bacd52e74f9ffb8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12287,7 +12287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9e520c9d4764e4448b3cfd5af3f26306, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13.96
+      value: 16.52
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9e520c9d4764e4448b3cfd5af3f26306, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14125,6 +14125,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Remington 870 Pickup
       objectReference: {fileID: 0}
+    - target: {fileID: 6128380132376235725, guid: a77793dcb6bf2d9458ad3cd4461fb5c5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77793dcb6bf2d9458ad3cd4461fb5c5, type: 3}
 --- !u!1001 &1756272794
@@ -15889,7 +15893,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9cfa38ab3a11b7546a4cf755f616ab02, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13.81
+      value: 16.37
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9cfa38ab3a11b7546a4cf755f616ab02, type: 3}
       propertyPath: m_LocalRotation.w

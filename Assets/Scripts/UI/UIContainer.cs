@@ -25,17 +25,20 @@ namespace QSTXFrameWork.UI.MVP
         private GameObject _howPlayViewObj;
         private GameObject _pauseViewObj;
         private AudioSource _audioSource;
+
         public void Register(UIVIewID viewID)
         {
             GameObject viewObj = GameObject.Instantiate(_uiViewPrefabDict[viewID]);
             viewObj.transform.SetParent(_canvasRootObj.transform.GetChild(viewObj.GetComponent<View>().SortLayer),false);
             _uiViewDict.Add(viewID, viewObj.GetComponent<IView>());
         }
+
         public void UnRegister(UIVIewID viewID)
         {
             GameObject.Destroy((_uiViewDict[viewID] as View).gameObject);
             _uiViewDict.Remove(viewID);
         }
+
         private void UIPrefabRegister()
         {
             _uiViewPrefabDict.Add(UIVIewID.MainViewID, _mainViewObj);
@@ -44,6 +47,8 @@ namespace QSTXFrameWork.UI.MVP
             _uiViewPrefabDict.Add(UIVIewID.HowPlayViewID, _howPlayViewObj);
             _uiViewPrefabDict.Add(UIVIewID.PauseViewID, _pauseViewObj);
         }
+
+
         public void Enter(UIVIewID viewID, bool isPop = false)
         {
             Register(viewID);
@@ -55,6 +60,8 @@ namespace QSTXFrameWork.UI.MVP
             }
             _uiViewStack.Push(viewID);
         }
+
+
         public void Exit(UIVIewID viewID)
         {
             _uiViewDict[viewID].OnViewExit();
