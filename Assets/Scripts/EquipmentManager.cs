@@ -15,7 +15,7 @@ public class EquipmentManager : MonoBehaviour
     private Inventory inventory;
     private HUD hud;
 
-    [SerializeField] Weapon defaultWeapon = null;
+    //private WeaponShooting shooting;
 
     void Start()
     {
@@ -51,7 +51,6 @@ public class EquipmentManager : MonoBehaviour
     {
         currentlyEquippedWeapon = (int)weapon.weaponStyle;
         currentWeaponAudio = (int)weapon.weaponType;
-        //Debug.Log(currentWeaponAudio);
         anim.SetInteger("weaponType", (int)weapon.weaponType);
         hud.UpdateWeaponUI(weapon);
     }

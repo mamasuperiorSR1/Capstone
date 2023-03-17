@@ -21,6 +21,7 @@ public class WeaponShooting : MonoBehaviour
     [SerializeField] private AudioSource pistolsound;
     [SerializeField] private AudioSource arsound;
     [SerializeField] private AudioSource shotgunsound;
+    public ParticleSystem MuzzleFlash = null;
 
     private Camera cam;
     private Inventory inventory;
@@ -37,7 +38,11 @@ public class WeaponShooting : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKey(KeyCode.Mouse0))
+        /*if(Input.GetKeyDown(KeyCode.Alpha1) && Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            MuzzleFlash = manager.currentWeaponObject.transform.Find("WFX_MF FPS RIFLE1").GetComponent<ParticleSystem>();
+        }*/
+        if (Input.GetKey(KeyCode.Mouse0))
         {
             Shoot();
         }
@@ -48,6 +53,27 @@ public class WeaponShooting : MonoBehaviour
         }
     }
 
+    IEnumerator MuzzleAndSound()
+    {
+        MuzzleFlash.Play();
+        if (manager.currentWeaponAudio == 1 && !pistolsound.isPlaying)
+        {
+            pistolsound.Play();
+        }
+        if (manager.currentWeaponAudio == 2 && !arsound.isPlaying)
+        {
+            arsound.Play();
+        }
+        if (manager.currentWeaponAudio == 3 && !shotgunsound.isPlaying)
+        {
+            shotgunsound.Play();
+        }
+        yield return new WaitForSeconds(0.25f);
+        MuzzleFlash.Stop();
+        pistolsound.Stop();
+        arsound.Stop();
+        shotgunsound.Stop();
+    }
     private void Shoot()
     {
         CheckCanShoot(manager.currentlyEquippedWeapon);
@@ -64,18 +90,7 @@ public class WeaponShooting : MonoBehaviour
 
                 RaycastShoot(currentWeapon);
                 UseAmmo((int)currentWeapon.weaponStyle, 1, 0);
-                if (manager.currentWeaponAudio == 1 && !pistolsound.isPlaying)
-                {
-                    pistolsound.Play();
-                }
-                if (manager.currentWeaponAudio == 2 && !arsound.isPlaying)
-                {
-                    arsound.Play();
-                }
-                if (manager.currentWeaponAudio == 3 && !shotgunsound.isPlaying)
-                {
-                    shotgunsound.Play();
-                }
+                StartCoroutine(MuzzleAndSound());
             }
         }
         else
@@ -93,7 +108,7 @@ public class WeaponShooting : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, currentWeaponRange))
         {
-            Debug.Log(hit.transform.name);
+            Debug.Log("hit"+hit.transform.name);
 
             if (hit.transform.tag == "Enemy")
             {

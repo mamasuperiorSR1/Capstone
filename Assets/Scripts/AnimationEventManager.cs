@@ -7,6 +7,7 @@ public class AnimationEventManager : MonoBehaviour
     private EquipmentManager manager;
     private Inventory inventory;
     private WeaponShooting shooting;
+    private Weapon defaultWeapon = null;
 
     private void Start()
     {
@@ -22,6 +23,7 @@ public class AnimationEventManager : MonoBehaviour
     {
         DestroyWeapon();
         manager.currentWeaponObject = Instantiate(inventory.GetItem(manager.currentlyEquippedWeapon).prefab, manager.WeaponHolderR);
+        shooting.MuzzleFlash = manager.currentWeaponObject.transform.Find("WFX_MF FPS RIFLE1").GetComponent<ParticleSystem>();
         manager.currentWeaponBarrel = manager.currentWeaponObject.transform.GetChild(0);
         manager.currentWeaponAnim = manager.currentWeaponObject.GetComponent<Animator>();
     }
