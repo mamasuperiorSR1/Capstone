@@ -38,11 +38,8 @@ public class WeaponShooting : MonoBehaviour
 
     void Update()
     {
-        /*if(Input.GetKeyDown(KeyCode.Alpha1) && Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            MuzzleFlash = manager.currentWeaponObject.transform.Find("WFX_MF FPS RIFLE1").GetComponent<ParticleSystem>();
-        }*/
-        if (Input.GetKey(KeyCode.Mouse0))
+        CheckCanShoot(manager.currentlyEquippedWeapon);
+        if (Input.GetKeyDown(KeyCode.Mouse0) && canShoot)
         {
             Shoot();
         }
@@ -53,49 +50,34 @@ public class WeaponShooting : MonoBehaviour
         }
     }
 
-    IEnumerator MuzzleAndSound()
+    IEnumerator Muzzle()
     {
         MuzzleFlash.Play();
-        if (manager.currentWeaponAudio == 1 && !pistolsound.isPlaying)
-        {
-            pistolsound.Play();
-        }
-        if (manager.currentWeaponAudio == 2 && !arsound.isPlaying)
-        {
-            arsound.Play();
-        }
-        if (manager.currentWeaponAudio == 3 && !shotgunsound.isPlaying)
-        {
-            shotgunsound.Play();
-        }
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0.1f);
         MuzzleFlash.Stop();
-        pistolsound.Stop();
-        arsound.Stop();
-        shotgunsound.Stop();
     }
     private void Shoot()
     {
-        CheckCanShoot(manager.currentlyEquippedWeapon);
-        
-        if (canShoot && canReload)
-        {
-            Weapon currentWeapon = inventory.GetItem(manager.currentlyEquippedWeapon);
+        Weapon currentWeapon = inventory.GetItem(manager.currentlyEquippedWeapon);
 
-            if (Time.time > lastShootTime + currentWeapon.fireRate)
+        if (Time.time > lastShootTime + currentWeapon.fireRate)
+        {
+            lastShootTime = Time.time;
+            RaycastShoot(currentWeapon);
+            UseAmmo((int)currentWeapon.weaponStyle, 1, 0);
+            if (manager.currentWeaponAudio == 1)
             {
-                //Debug.Log("Shoot");
-                
-                lastShootTime = Time.time;
-
-                RaycastShoot(currentWeapon);
-                UseAmmo((int)currentWeapon.weaponStyle, 1, 0);
-                StartCoroutine(MuzzleAndSound());
+                pistolsound.Play();
             }
-        }
-        else
-        {
-            Debug.Log("Not enough ammo in magazine.");
+            if (manager.currentWeaponAudio == 2)
+            {
+                arsound.Play();
+            }
+            if (manager.currentWeaponAudio == 3)
+            {
+                shotgunsound.Play();
+            }
+            StartCoroutine(Muzzle());
         }
     }
 
@@ -124,10 +106,9 @@ public class WeaponShooting : MonoBehaviour
         //primary
         if (slot == 0)
         {
-            if (primaryCurrentAmmo <= 0)
+            if (primaryCurrentAmmo == 0)
             {
                 primaryMagazineIsEmpty = true;
-                CheckCanShoot(manager.currentlyEquippedWeapon);
             }
             else
             {
@@ -140,10 +121,9 @@ public class WeaponShooting : MonoBehaviour
         //secondary
         if (slot == 1)
         {
-            if (secondaryCurrentAmmo <= 0)
+            if (secondaryCurrentAmmo == 0)
             {
                 secondaryMagazineIsEmpty = true;
-                CheckCanShoot(manager.currentlyEquippedWeapon);
             }
             else
             {
@@ -175,7 +155,7 @@ public class WeaponShooting : MonoBehaviour
     {
         if (slot == 0)
         {
-            if (primaryMagazineIsEmpty)
+            if (primaryCurrentAmmo < 1)
             {
                 canShoot = false;
             }
@@ -187,7 +167,7 @@ public class WeaponShooting : MonoBehaviour
 
         if (slot == 1)
         {
-            if (secondaryMagazineIsEmpty)
+            if (secondaryCurrentAmmo < 1)
             {
                 canShoot = false;
             }
@@ -200,65 +180,64 @@ public class WeaponShooting : MonoBehaviour
 
     private void Reload(int slot)
     {
-        if (canReload)
+        if (slot == 0)
         {
-            if (slot == 0)
+            int ammoToReload = inventory.GetItem(0).magazineSize - primaryCurrentAmmo;
+
+            if (primaryCurrentAmmoStorage >= ammoToReload)
             {
-                int ammoToReload = inventory.GetItem(0).magazineSize - primaryCurrentAmmo;
-
-                if (primaryCurrentAmmoStorage >= ammoToReload)
+                if (primaryCurrentAmmo == inventory.GetItem(0).magazineSize)
                 {
-                    if (primaryCurrentAmmo == inventory.GetItem(0).magazineSize)
-                    {
-                        Debug.Log("Magazine is full.");
-                        return;
-                    }
-
-                    AddAmmo(slot, ammoToReload, 0);
-                    UseAmmo(slot, 0, ammoToReload);
-
-                    primaryMagazineIsEmpty = false;
-                    CheckCanShoot(slot);
+                    Debug.Log("Magazine is full.");
+                    return;
                 }
-                else
-                {
-                    Debug.Log("Not enough ammo to reload.");
-                }
+
+                AddAmmo(slot, ammoToReload, 0);
+                UseAmmo(slot, 0, ammoToReload);
+
+                primaryMagazineIsEmpty = false;
             }
-
-            if (slot == 1)
+            else
             {
-                int ammoToReload = inventory.GetItem(1).magazineSize - secondaryCurrentAmmo;
+                ammoToReload = primaryCurrentAmmoStorage;
+                AddAmmo(slot, ammoToReload, 0);
+                UseAmmo(slot, 0, ammoToReload);
 
-                if (secondaryCurrentAmmoStorage >= inventory.GetItem(1).magazineSize)
-                {
-                    if (secondaryCurrentAmmo == inventory.GetItem(1).magazineSize)
-                    {
-                        Debug.Log("Magazine is full.");
-                        return;
-                    }
-
-                    AddAmmo(slot, ammoToReload, 0);
-                    UseAmmo(slot, 0, ammoToReload);
-
-                    secondaryMagazineIsEmpty = false;
-                    CheckCanShoot(slot);
-                }
-                else
-                {
-                    Debug.Log("Not enough ammo to reload.");
-                }
-
+                primaryMagazineIsEmpty = false;
+                Debug.Log("Loaded last mag");
             }
-
-            anim.SetTrigger("reload");
-            manager.currentWeaponAnim.SetTrigger("reload");
-        }
-        else
-        {
-            Debug.Log("can't reload.");
         }
 
+        if (slot == 1)
+        {
+            int ammoToReload = inventory.GetItem(1).magazineSize - secondaryCurrentAmmo;
+
+            if (secondaryCurrentAmmoStorage >= inventory.GetItem(1).magazineSize)
+            {
+                if (secondaryCurrentAmmo == inventory.GetItem(1).magazineSize)
+                {
+                    Debug.Log("Magazine is full.");
+                    return;
+                }
+
+                AddAmmo(slot, ammoToReload, 0);
+                UseAmmo(slot, 0, ammoToReload);
+
+                secondaryMagazineIsEmpty = false;
+            }
+            else
+            {
+                ammoToReload = secondaryCurrentAmmoStorage;
+                AddAmmo(slot, ammoToReload, 0);
+                UseAmmo(slot, 0, ammoToReload);
+
+                secondaryMagazineIsEmpty = false;
+                Debug.Log("Loaded last mag");
+            }
+
+        }
+
+        anim.SetTrigger("reload");
     }
 
     private void AddAmmo(int slot, int currentAmmoadded, int currentStoredAmmoAdded)
@@ -286,7 +265,7 @@ public class WeaponShooting : MonoBehaviour
         cam = GetComponentInChildren<Camera>();
         inventory = GetComponent<Inventory>();
         manager = GetComponent<EquipmentManager>();
-        anim = GetComponent<Animator>();
+        anim = GetComponentInChildren<Animator>();
         hud = GetComponent<HUD>();
     }
 }

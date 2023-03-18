@@ -23,7 +23,6 @@ public class PlayerPickup : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, pickupRange, pickupLayer))
             {
-                Debug.Log("Raycast hit " + hit.transform.name);
                 Weapon newItem = hit.transform.GetComponent<ItemObject>().item as Weapon;
                 inventory.AddItem(newItem);
                 Destroy(hit.transform.gameObject);

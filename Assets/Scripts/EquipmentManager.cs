@@ -15,8 +15,6 @@ public class EquipmentManager : MonoBehaviour
     private Inventory inventory;
     private HUD hud;
 
-    //private WeaponShooting shooting;
-
     void Start()
     {
         GetReferences();

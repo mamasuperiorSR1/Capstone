@@ -6,6 +6,7 @@ using UnityEngine;
 public class Weapon : Item
 {
     public GameObject prefab;
+    public int damage;
     public int magazineSize;
     public int storedAmmo;
     public float fireRate;
