@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using QSTXFrameWork.UI.MVP;
 
 public class PlayerStats : CharacterStats
 {
@@ -26,6 +27,10 @@ public class PlayerStats : CharacterStats
     public override void CheckHealth()
     {
         base.CheckHealth();
+        if (isDead)
+        {
+            UIContainer.Instance.Enter(UIVIewID.GameEndViewID);
+        }
         hud.UpdateHealth(health, maxHealth);
     }
 }
