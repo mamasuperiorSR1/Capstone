@@ -125,7 +125,6 @@ public class WeaponShooting : MonoBehaviour
             {
                 primaryCurrentAmmo -= currentAmmoUsed;
                 primaryCurrentAmmoStorage -= currentStoredAmmoUsed;
-                hud.UpdateWeaponAmmoUI(primaryCurrentAmmo, primaryCurrentAmmoStorage);
             }
         }
 
@@ -140,7 +139,6 @@ public class WeaponShooting : MonoBehaviour
             {
                 secondaryCurrentAmmo -= currentAmmoUsed;
                 secondaryCurrentAmmoStorage -= currentStoredAmmoUsed;
-                hud.UpdateWeaponAmmoUI(secondaryCurrentAmmo, secondaryCurrentAmmoStorage);
             }
         }
     }
@@ -257,7 +255,6 @@ public class WeaponShooting : MonoBehaviour
         {
             primaryCurrentAmmo += currentAmmoadded;
             primaryCurrentAmmoStorage += currentStoredAmmoAdded;
-            hud.UpdateWeaponAmmoUI(primaryCurrentAmmo, primaryCurrentAmmoStorage);
         }
 
         //secondary
@@ -265,7 +262,6 @@ public class WeaponShooting : MonoBehaviour
         {
             secondaryCurrentAmmo += currentAmmoadded;
             secondaryCurrentAmmoStorage += currentStoredAmmoAdded;
-            hud.UpdateWeaponAmmoUI(secondaryCurrentAmmo, secondaryCurrentAmmoStorage);
         }
     }
 
