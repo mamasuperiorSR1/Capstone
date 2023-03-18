@@ -8,6 +8,7 @@ public class WeaponShooting : MonoBehaviour
 
     [SerializeField] private bool canShoot = true;
     public bool canReload = true;
+    private bool isReloading;
 
     [SerializeField] private int primaryCurrentAmmo;
     [SerializeField] private int primaryCurrentAmmoStorage;
@@ -39,14 +40,14 @@ public class WeaponShooting : MonoBehaviour
     void Update()
     {
         CheckCanShoot(manager.currentlyEquippedWeapon);
-        if (Input.GetKeyDown(KeyCode.Mouse0) && canShoot)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && canShoot && isReloading == false)
         {
             Shoot();
         }
 
         if (Input.GetKeyDown(KeyCode.R))
         {
-            Reload(manager.currentlyEquippedWeapon);
+            StartCoroutine(Reload(manager.currentlyEquippedWeapon));
         }
     }
 
@@ -177,9 +178,9 @@ public class WeaponShooting : MonoBehaviour
             }
         }
     }
-
-    private void Reload(int slot)
+    IEnumerator Reload(int slot)
     {
+        isReloading = true;
         if (slot == 0)
         {
             int ammoToReload = inventory.GetItem(0).magazineSize - primaryCurrentAmmo;
@@ -189,7 +190,6 @@ public class WeaponShooting : MonoBehaviour
                 if (primaryCurrentAmmo == inventory.GetItem(0).magazineSize)
                 {
                     Debug.Log("Magazine is full.");
-                    return;
                 }
 
                 AddAmmo(slot, ammoToReload, 0);
@@ -217,7 +217,6 @@ public class WeaponShooting : MonoBehaviour
                 if (secondaryCurrentAmmo == inventory.GetItem(1).magazineSize)
                 {
                     Debug.Log("Magazine is full.");
-                    return;
                 }
 
                 AddAmmo(slot, ammoToReload, 0);
@@ -236,10 +235,11 @@ public class WeaponShooting : MonoBehaviour
             }
 
         }
-
         anim.SetTrigger("reload");
+        yield return new WaitForSeconds(3f);
+        isReloading = false;
     }
-
+    
     private void AddAmmo(int slot, int currentAmmoadded, int currentStoredAmmoAdded)
     {
         //primary
