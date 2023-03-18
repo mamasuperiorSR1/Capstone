@@ -24,17 +24,6 @@ public class EquipmentManager : MonoBehaviour
 
     void Update()
     {
-        if(currentlyEquippedWeapon == 2)
-        {
-            if (Input.GetKeyDown(KeyCode.Alpha1) && currentlyEquippedWeapon != 0)
-            {
-                EquipWeapon(inventory.GetItem(0));
-            }
-            if (Input.GetKeyDown(KeyCode.Alpha2) && currentlyEquippedWeapon != 1)
-            {
-                EquipWeapon(inventory.GetItem(1));
-            }
-        }
         if (Input.GetKeyDown(KeyCode.Alpha1) && currentlyEquippedWeapon != 0)
         {
             UnequipWeapon();

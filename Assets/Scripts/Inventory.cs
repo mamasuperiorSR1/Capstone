@@ -29,23 +29,15 @@ public class Inventory : MonoBehaviour
         if (weapons[newItemIndex] != null)
         {
             RemoveItem(newItemIndex);
-            //manager.UnequipWeapon();
-        }
-        if (manager.currentWeaponObject == null)
-        {
-            weapons[newItemIndex] = newItem;
-            manager.EquipWeapon(newItem);
-            hud.UpdateWeaponUI(newItem);
-            shooting.InitAmmo((int)newItem.weaponStyle, newItem);
         }
         if (manager.currentWeaponObject != null)
         {
             manager.UnequipWeapon();
-            weapons[newItemIndex] = newItem;
-            manager.EquipWeapon(newItem);
-            hud.UpdateWeaponUI(newItem);
-            shooting.InitAmmo((int)newItem.weaponStyle, newItem);
         }
+        weapons[newItemIndex] = newItem;
+        manager.EquipWeapon(newItem);
+        hud.UpdateWeaponUI(newItem);
+        shooting.InitAmmo((int)newItem.weaponStyle, newItem);
     }
 
     public void RemoveItem(int index)
