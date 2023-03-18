@@ -9,6 +9,7 @@ public class Inventory : MonoBehaviour
 
     private WeaponShooting shooting;
     private HUD hud;
+    private EquipmentManager manager;
 
     void Start()
     {
@@ -23,16 +24,28 @@ public class Inventory : MonoBehaviour
 
     public void AddItem(Weapon newItem)
     {
+        
         int newItemIndex = (int)newItem.weaponStyle;
         if (weapons[newItemIndex] != null)
         {
             RemoveItem(newItemIndex);
+            //manager.UnequipWeapon();
         }
-        weapons[newItemIndex] = newItem;
-
-        hud.UpdateWeaponUI(newItem);
-
-        shooting.InitAmmo((int)newItem.weaponStyle, newItem);
+        if (manager.currentWeaponObject == null)
+        {
+            weapons[newItemIndex] = newItem;
+            manager.EquipWeapon(newItem);
+            hud.UpdateWeaponUI(newItem);
+            shooting.InitAmmo((int)newItem.weaponStyle, newItem);
+        }
+        if (manager.currentWeaponObject != null)
+        {
+            manager.UnequipWeapon();
+            weapons[newItemIndex] = newItem;
+            manager.EquipWeapon(newItem);
+            hud.UpdateWeaponUI(newItem);
+            shooting.InitAmmo((int)newItem.weaponStyle, newItem);
+        }
     }
 
     public void RemoveItem(int index)
@@ -49,5 +62,6 @@ public class Inventory : MonoBehaviour
     {
         hud = GetComponent<HUD>();
         shooting = GetComponent<WeaponShooting>();
+        manager = GetComponent<EquipmentManager>();
     }
 }

@@ -47,7 +47,7 @@ public class EquipmentManager : MonoBehaviour
         }
     }
 
-    private void EquipWeapon(Weapon weapon)
+    public void EquipWeapon(Weapon weapon)
     {
         currentlyEquippedWeapon = (int)weapon.weaponStyle;
         currentWeaponAudio = (int)weapon.weaponType;
@@ -55,7 +55,7 @@ public class EquipmentManager : MonoBehaviour
         hud.UpdateWeaponUI(weapon);
     }
 
-    private void UnequipWeapon()
+    public void UnequipWeapon()
     {
         anim.SetTrigger("unequipWeapon");
     }
