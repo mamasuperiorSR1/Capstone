@@ -4122,7 +4122,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &531063608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9782,6 +9782,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canShoot: 1
   canReload: 1
+  isSwitching: 0
   primaryCurrentAmmo: 0
   primaryCurrentAmmoStorage: 0
   secondaryCurrentAmmo: 0
@@ -11705,6 +11706,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chr_Zcharacter_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5091242709008108106, guid: 6d30ae6f59058ea4790c0d9389de2ac9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5091242709008406442, guid: 6d30ae6f59058ea4790c0d9389de2ac9, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -11755,11 +11760,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8724606952851225690, guid: 6d30ae6f59058ea4790c0d9389de2ac9, type: 3}
       propertyPath: health
-      value: 20
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8724606952851225690, guid: 6d30ae6f59058ea4790c0d9389de2ac9, type: 3}
       propertyPath: maxHealth
-      value: 20
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d30ae6f59058ea4790c0d9389de2ac9, type: 3}
@@ -18741,6 +18746,14 @@ PrefabInstance:
     - target: {fileID: 2169119916539432570, guid: 1ea206c898432bb47ae40c68031a14c9, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169119916539432574, guid: 1ea206c898432bb47ae40c68031a14c9, type: 3}
+      propertyPath: health
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2169119916539432574, guid: 1ea206c898432bb47ae40c68031a14c9, type: 3}
+      propertyPath: maxHealth
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6988343937897523053, guid: 1ea206c898432bb47ae40c68031a14c9, type: 3}
       propertyPath: MuzzleFlash
