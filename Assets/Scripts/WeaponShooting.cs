@@ -9,6 +9,7 @@ public class WeaponShooting : MonoBehaviour
     [SerializeField] private bool canShoot = true;
     public bool canReload = true;
     private bool isReloading;
+    public bool isSwitching;
 
     [SerializeField] private int primaryCurrentAmmo;
     [SerializeField] private int primaryCurrentAmmoStorage;
@@ -41,7 +42,7 @@ public class WeaponShooting : MonoBehaviour
     {
         updateWeaponUI(manager.currentlyEquippedWeapon);
         CheckCanShoot(manager.currentlyEquippedWeapon);
-        if (Input.GetKeyDown(KeyCode.Mouse0) && canShoot && isReloading == false)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && canShoot && isReloading == false && isSwitching == false)
         {
             Shoot();
         }
@@ -96,8 +97,8 @@ public class WeaponShooting : MonoBehaviour
             if (hit.transform.tag == "Enemy")
             {
                 CharacterStats enemyStats = hit.transform.GetComponent<CharacterStats>();
-                //enemyStats.TakeDamage(currentWeapon.damage);
-                enemyStats.TakeDamage(10);
+                enemyStats.TakeDamage(currentWeapon.damage);
+                //enemyStats.TakeDamage(10);
             }
         }
     }

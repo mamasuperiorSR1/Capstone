@@ -24,7 +24,6 @@ public class Inventory : MonoBehaviour
 
     public void AddItem(Weapon newItem)
     {
-        
         int newItemIndex = (int)newItem.weaponStyle;
         if (weapons[newItemIndex] != null)
         {

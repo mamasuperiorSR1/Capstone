@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CharacterStats : MonoBehaviour
 {
-    [SerializeField] protected int health;
-    [SerializeField] protected int maxHealth;
+    [SerializeField] protected int health = 100;
+    [SerializeField] protected int maxHealth = 100;
 
     [SerializeField] protected bool isDead;
 
@@ -58,7 +58,6 @@ public class CharacterStats : MonoBehaviour
 
     public virtual void InitVariables()
     {
-        maxHealth = 100;
         SetHealthTo(maxHealth);
         isDead = false;
     }

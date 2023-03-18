@@ -27,7 +27,7 @@ public class ZombieStats : CharacterStats
 
     public override void InitVariables()
     {
-        maxHealth = 25;
+        maxHealth = 100;
         SetHealthTo(maxHealth);
         isDead = false;
 

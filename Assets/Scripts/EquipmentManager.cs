@@ -14,6 +14,7 @@ public class EquipmentManager : MonoBehaviour
     public Animator currentWeaponAnim;
     private Inventory inventory;
     private HUD hud;
+    private WeaponShooting shooting;
 
     void Start()
     {
@@ -34,6 +35,13 @@ public class EquipmentManager : MonoBehaviour
         }
     }
 
+    public IEnumerator Switching()
+    {
+        shooting.isSwitching = true;
+        yield return new WaitForSeconds(3f);
+        shooting.isSwitching = false;
+    }
+
     public void EquipWeapon(Weapon weapon)
     {
         currentlyEquippedWeapon = (int)weapon.weaponStyle;
@@ -41,7 +49,7 @@ public class EquipmentManager : MonoBehaviour
         anim.SetInteger("weaponType", (int)weapon.weaponType);
         hud.UpdateWeaponUI(weapon);
     }
-
+    
     public void UnequipWeapon()
     {
         anim.SetTrigger("unequipWeapon");
