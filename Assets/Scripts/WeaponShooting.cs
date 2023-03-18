@@ -39,12 +39,12 @@ public class WeaponShooting : MonoBehaviour
 
     void Update()
     {
+        updateWeaponUI(manager.currentlyEquippedWeapon);
         CheckCanShoot(manager.currentlyEquippedWeapon);
         if (Input.GetKeyDown(KeyCode.Mouse0) && canShoot && isReloading == false)
         {
             Shoot();
         }
-
         if (Input.GetKeyDown(KeyCode.R))
         {
             StartCoroutine(Reload(manager.currentlyEquippedWeapon));
@@ -101,7 +101,17 @@ public class WeaponShooting : MonoBehaviour
             }
         }
     }
-
+    private void updateWeaponUI(int slot)
+    {
+        if (slot == 0)
+        {
+            hud.UpdateWeaponAmmoUI(primaryCurrentAmmo, primaryCurrentAmmoStorage);
+        }
+        if (slot == 1)
+        {
+            hud.UpdateWeaponAmmoUI(secondaryCurrentAmmo, secondaryCurrentAmmoStorage);
+        }
+    }
     private void UseAmmo(int slot, int currentAmmoUsed, int currentStoredAmmoUsed)
     {
         //primary
