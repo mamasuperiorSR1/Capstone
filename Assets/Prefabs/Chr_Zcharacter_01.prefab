@@ -146,7 +146,7 @@ MonoBehaviour:
   health: 100
   maxHealth: 100
   isDead: 0
-  damage: 3
+  damage: 10
   attackSpeed: 0
   canAttack: 0
 --- !u!195 &602504087033204292

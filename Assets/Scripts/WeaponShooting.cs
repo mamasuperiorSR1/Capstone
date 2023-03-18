@@ -42,7 +42,7 @@ public class WeaponShooting : MonoBehaviour
     {
         updateWeaponUI(manager.currentlyEquippedWeapon);
         CheckCanShoot(manager.currentlyEquippedWeapon);
-        if (Input.GetKeyDown(KeyCode.Mouse0) && canShoot && isReloading == false && isSwitching == false)
+        if (Input.GetKey(KeyCode.Mouse0) && canShoot && isReloading == false && isSwitching == false)
         {
             Shoot();
         }

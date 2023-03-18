@@ -19,7 +19,7 @@ MonoBehaviour:
   damage: 50
   magazineSize: 7
   storedAmmo: 21
-  fireRate: 0.4
+  fireRate: 0.5
   range: 25
   weaponType: 1
   weaponStyle: 1
