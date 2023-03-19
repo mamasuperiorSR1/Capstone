@@ -45,11 +45,11 @@ public class WeaponShooting : MonoBehaviour
         CheckCanShoot(manager.currentlyEquippedWeapon);
         if (canShoot && isReloading == false && isSwitching == false)
         {
-            if (Input.GetKey(KeyCode.Mouse0) && (int)inventory.GetItem(0).fireMode == 1)
+            if (Input.GetKey(KeyCode.Mouse0) && manager.FireMode == 1)
             {
                 Shoot();
             }
-            if (Input.GetKeyDown(KeyCode.Mouse0) && (int)inventory.GetItem(0).fireMode == 0)
+            if (Input.GetKeyDown(KeyCode.Mouse0) && manager.FireMode == 0)
             {
                 Shoot();
             }

@@ -8,6 +8,7 @@ public class EquipmentManager : MonoBehaviour
     public GameObject currentWeaponObject = null;
     public Transform currentWeaponBarrel = null;
     public int currentWeaponAudio;
+    public int FireMode;
 
     public Transform WeaponHolderR = null;
     private Animator anim;
@@ -46,6 +47,14 @@ public class EquipmentManager : MonoBehaviour
     {
         currentlyEquippedWeapon = (int)weapon.weaponStyle;
         currentWeaponAudio = (int)weapon.weaponType;
+        if ((int)weapon.fireMode == 0)
+        {
+            FireMode = 0;
+        }
+        if ((int)weapon.fireMode == 1)
+        {
+            FireMode = 1;
+        }
         anim.SetInteger("weaponType", (int)weapon.weaponType);
         hud.UpdateWeaponUI(weapon);
     }

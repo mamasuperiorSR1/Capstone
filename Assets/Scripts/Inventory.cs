@@ -37,6 +37,14 @@ public class Inventory : MonoBehaviour
         manager.EquipWeapon(newItem);
         hud.UpdateWeaponUI(newItem);
         shooting.InitAmmo((int)newItem.weaponStyle, newItem);
+        if ((int)newItem.fireMode == 0)
+        {
+            manager.FireMode = 0;
+        }
+        if ((int)newItem.fireMode == 1)
+        {
+            manager.FireMode = 1;
+        }
     }
 
     public void RemoveItem(int index)
