@@ -14,14 +14,31 @@ public class ZombieController : MonoBehaviour
     private ZombieStats stats = null;
     private Transform target;
 
+    [SerializeField] private AudioSource noise;
+    [SerializeField] private AudioClip[] noiseArray;
+
+    private void Awake()
+    {
+        noise = GetComponent<AudioSource>();
+    }
+
     private void Start()
     {
         GetReferences();
+        StartCoroutine(makenoise());
     }
 
     private void Update()
     {
         MoveToTarget();
+    }
+
+    private IEnumerator makenoise()
+    {
+        int randomInt = Random.Range(1, noiseArray.Length);
+        noise.clip = noiseArray[randomInt];
+        noise.PlayOneShot(noise.clip);
+        yield return new WaitForSeconds(10f);
     }
 
     private void MoveToTarget()
