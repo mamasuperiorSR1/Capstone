@@ -13,7 +13,15 @@ public class Weapon : Item
     public float range;
     public WeaponType weaponType;
     public WeaponStyle weaponStyle;
+    public FireMode fireMode;
+
+    public float recoilX;
+    public float recoilY;
+    public float recoilZ;
+    public float snappiness;
+    public float returnSpeed;
 }
 
 public enum WeaponType { Melee, Pistol, AR, Shotgun, Sniper}
 public enum WeaponStyle { Primary, Secondary, Melee}
+public enum FireMode { Semi, Auto }

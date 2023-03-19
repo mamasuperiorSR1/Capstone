@@ -19,7 +19,13 @@ MonoBehaviour:
   damage: 40
   magazineSize: 30
   storedAmmo: 60
-  fireRate: 0.3
+  fireRate: 0.2
   range: 75
   weaponType: 2
   weaponStyle: 0
+  fireMode: 1
+  recoilX: 2
+  recoilY: 2
+  recoilZ: 2
+  snappiness: 2
+  returnSpeed: 10

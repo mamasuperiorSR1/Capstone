@@ -23,3 +23,9 @@ MonoBehaviour:
   range: 50
   weaponType: 3
   weaponStyle: 0
+  fireMode: 0
+  recoilX: 3
+  recoilY: 3
+  recoilZ: 3
+  snappiness: 4
+  returnSpeed: 10

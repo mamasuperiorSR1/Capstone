@@ -30,6 +30,7 @@ public class WeaponShooting : MonoBehaviour
     private EquipmentManager manager;
     private Animator anim;
     private HUD hud;
+    private Recoil rs;
 
     void Start()
     {
@@ -42,9 +43,16 @@ public class WeaponShooting : MonoBehaviour
     {
         updateWeaponUI(manager.currentlyEquippedWeapon);
         CheckCanShoot(manager.currentlyEquippedWeapon);
-        if (Input.GetKey(KeyCode.Mouse0) && canShoot && isReloading == false && isSwitching == false)
+        if (canShoot && isReloading == false && isSwitching == false)
         {
-            Shoot();
+            if (Input.GetKey(KeyCode.Mouse0) && (int)inventory.GetItem(0).fireMode == 1)
+            {
+                Shoot();
+            }
+            if (Input.GetKeyDown(KeyCode.Mouse0) && (int)inventory.GetItem(0).fireMode == 0)
+            {
+                Shoot();
+            }
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
@@ -66,6 +74,7 @@ public class WeaponShooting : MonoBehaviour
         {
             lastShootTime = Time.time;
             RaycastShoot(currentWeapon);
+            rs.RecoilFire();
             UseAmmo((int)currentWeapon.weaponStyle, 1, 0);
             if (manager.currentWeaponAudio == 1)
             {
@@ -274,5 +283,6 @@ public class WeaponShooting : MonoBehaviour
         manager = GetComponent<EquipmentManager>();
         anim = GetComponentInChildren<Animator>();
         hud = GetComponent<HUD>();
+        rs = GetComponentInChildren<Recoil>();
     }
 }
