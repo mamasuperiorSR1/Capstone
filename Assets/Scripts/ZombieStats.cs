@@ -23,7 +23,7 @@ public class ZombieStats : CharacterStats
     public override void Die()
     {
         base.Die();
-        Instantiate(deadversion, transform.position, transform.rotation * Quaternion.Euler(-90f,180f, 0f));
+        Instantiate(deadversion, transform.position, transform.rotation * Quaternion.Euler(-90f, 0f, 0f));
         Destroy(gameObject);
     }
 
