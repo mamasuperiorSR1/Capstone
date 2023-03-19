@@ -65,7 +65,7 @@ public class EnemySpawner : MonoBehaviour
 
     private void SpawnZombie(GameObject enemy)
     {
-        int randomInt = Random.RandomRange(1, spawners.Length);
+        int randomInt = Random.Range(1, spawners.Length);
         Transform randomSpawner = spawners[randomInt];
 
         GameObject newEnemy = Instantiate(enemy, randomSpawner.position, randomSpawner.rotation);

@@ -8,6 +8,7 @@ public class ZombieStats : CharacterStats
     [SerializeField] public float attackSpeed;
 
     [SerializeField] private bool canAttack;
+    [SerializeField] private GameObject deadversion;
 
     private void Start()
     {
@@ -22,6 +23,7 @@ public class ZombieStats : CharacterStats
     public override void Die()
     {
         base.Die();
+        Instantiate(deadversion, transform.position, transform.rotation * Quaternion.Euler(-90f,180f, 0f));
         Destroy(gameObject);
     }
 

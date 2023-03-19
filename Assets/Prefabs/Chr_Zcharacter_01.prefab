@@ -149,6 +149,7 @@ MonoBehaviour:
   damage: 10
   attackSpeed: 0
   canAttack: 0
+  deadversion: {fileID: 1108879064816799099, guid: fef0337e3b564a04ea7a3fb67731b8d2, type: 3}
 --- !u!195 &602504087033204292
 NavMeshAgent:
   m_ObjectHideFlags: 0
